@@ -1,0 +1,134 @@
+# Window settings
+window:
+  dimensions:
+    columns: 71
+    lines: 22
+
+# Fonts
+font:
+  size: 11
+  normal:
+    family: MesloLGS NF
+    style: Regular
+  bold:
+    family: MesloLGS NF
+    # style: Bold
+  italic:
+    family: MesloLGS NF
+    # style: Italic
+
+# Colour schemes
+schemes:
+  gruvbox: &active
+    primary:
+      background: '#1d2021'
+      foreground: '#ebdbb2'
+    normal:
+      black:   '#282828'
+      red:     '#cc241d'
+      green:   '#98971a'
+      yellow:  '#d79921'
+      blue:    '#458588'
+      magenta: '#b16286'
+      cyan:    '#689d6a'
+      white:   '#a89984'
+    bright:
+      black:   '#928374'
+      red:     '#fb4934'
+      green:   '#b8bb26'
+      yellow:  '#fabd2f'
+      blue:    '#83a598'
+      magenta: '#d3869b'
+      cyan:    '#8ec07c'
+      white:   '#ebdbb2'
+  nord:
+    primary:
+      background: '#2E3440'
+      foreground: '#D8DEE9'
+    normal:
+      black:   '#3B4252'
+      red:     '#BF616A'
+      green:   '#A3BE8C'
+      yellow:  '#EBCB8B'
+      blue:    '#81A1C1'
+      magenta: '#B48EAD'
+      cyan:    '#88C0D0'
+      white:   '#E5E9F0'
+    bright:
+      black:   '#4C566A'
+      red:     '#BF616A'
+      green:   '#A3BE8C'
+      yellow:  '#EBCB8B'
+      blue:    '#81A1C1'
+      magenta: '#B48EAD'
+      cyan:    '#8FBCBB'
+      white:   '#ECEFF4'
+  monokai:
+    primary:
+      background: '#272822'
+      foreground: '#F8F8F2'
+    normal:
+      black:   '#272822'
+      red:     '#F92672'
+      green:   '#A6E22E'
+      yellow:  '#F4BF75'
+      blue:    '#66D9EF'
+      magenta: '#AE81FF'
+      cyan:    '#A1EFE4'
+      white:   '#F8F8F2'
+    bright:
+      black:   '#75715E'
+      red:     '#F92672'
+      green:   '#A6E22E'
+      yellow:  '#F4BF75'
+      blue:    '#66D9EF'
+      magenta: '#AE81FF'
+      cyan:    '#A1EFE4'
+      white:   '#F9F8F5'
+  material:
+    primary:
+      background: '#263238'
+      foreground: '#eeffff'
+    normal:
+      black:   '#000000'
+      red:     '#e53935'
+      green:   '#91b859'
+      yellow:  '#ffb62c'
+      blue:    '#6182b8'
+      magenta: '#ff5370'
+      cyan:    '#39adb5'
+      white:   '#a0a0a0'
+    bright:
+      black:   '#4e4e4e'
+      red:     '#ff5370'
+      green:   '#c3e88d'
+      yellow:  '#ffcb6b'
+      blue:    '#82aaff'
+      magenta: '#f07178'
+      cyan:    '#89ddff'
+      white:   '#ffffff'
+  base16:
+    primary:
+      background: '#181818'
+      foreground: '#d8d8d8'
+    normal:
+      black:   '#181818'
+      red:     '#ab4642'
+      green:   '#a1b56c'
+      yellow:  '#f7ca88'
+      blue:    '#7cafc2'
+      magenta: '#ba8baf'
+      cyan:    '#86c1b9'
+      white:   '#d8d8d8'
+    bright:
+      black:   '#585858'
+      red:     '#ab4642'
+      green:   '#a1b56c'
+      yellow:  '#f7ca88'
+      blue:    '#7cafc2'
+      magenta: '#ba8baf'
+      cyan:    '#86c1b9'
+      white:   '#f8f8f8'
+
+# Active colour scheme
+colors: *active
