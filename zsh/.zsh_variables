@@ -1,4 +1,6 @@
-export DOTFILES="$HOME/dev/dotfiles"
+export TERM="xterm-256color"
 export PATH="$HOME/bin:/usr/local/bin:$PATH:$HOME/.local/bin"
 export ZSH="/home/james/.oh-my-zsh"
+
+export DOTFILES="$HOME/dev/dotfiles"
 export ZID="z5257605"

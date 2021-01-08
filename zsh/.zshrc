@@ -9,11 +9,16 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
 fi
 ZSH_THEME="powerlevel10k/powerlevel10k"
 
+# Node version manager
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+
 # Active plugins
 plugins=(
-	git
-	zsh-autosuggestions
-	zsh-syntax-highlighting
+    git
+    zsh-autosuggestions
+    zsh-syntax-highlighting
+    nvm
 )
 
 # Load oh-my-zsh
