@@ -1,0 +1,4 @@
+export DOTFILES="$HOME/dev/dotfiles"
+export PATH="$HOME/bin:/usr/local/bin:$PATH:$HOME/.local/bin"
+export ZSH="/home/james/.oh-my-zsh"
+export ZID="z5257605"

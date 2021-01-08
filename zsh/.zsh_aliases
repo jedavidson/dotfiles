@@ -1,0 +1,8 @@
+# Command aliases
+alias vi="nvim"
+alias vim="nvim"
+alias cse="ssh $ZID@cse.unsw.edu.au"
+
+# Directory aliases
+alias dev="cd $HOME/dev"
+alias dots="cd $DOTFILES"
