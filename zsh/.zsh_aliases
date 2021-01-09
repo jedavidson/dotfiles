@@ -6,3 +6,5 @@ alias cse="ssh $ZID@cse.unsw.edu.au"
 # Directory aliases
 alias dev="cd $HOME/dev"
 alias dots="cd $DOTFILES"
+alias projects="cd $HOME/dev/projects"
+alias uni="cd $HOME/dev/university"
