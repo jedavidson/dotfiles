@@ -6,15 +6,19 @@ window:
 
 # Fonts
 font:
-  size: 11
+  # size: 11
+  size: 14
   normal:
-    family: MesloLGS NF
+    # family: MesloLGS NF
+    family: Ubuntu Mono
     style: Regular
   bold:
-    family: MesloLGS NF
+    # family: MesloLGS NF
+    family: Ubuntu Mono
     # style: Bold
   italic:
-    family: MesloLGS NF
+    # family: MesloLGS NF
+    family: Ubuntu Mono
     # style: Italic
 
 # Colour schemes
