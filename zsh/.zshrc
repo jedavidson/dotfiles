@@ -8,6 +8,7 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 ZSH_THEME="powerlevel10k/powerlevel10k"
+ZLE_RPROMPT_INDENT=0
 
 # Node version manager
 export NVM_DIR="$HOME/.nvm"
