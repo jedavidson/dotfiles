@@ -34,10 +34,9 @@ set list
 set showmatch
 set cursorline
 set laststatus=2
-
-
-" {{{ coc.nvim configuration
-
+set ttimeout
+set ttimeoutlen=20
+set timeoutlen=3000
 set hidden
 set nobackup
 set nowritebackup
@@ -45,6 +44,15 @@ set cmdheight=2
 set updatetime=300
 set shortmess+=c
 
+" Key remappings
+nnoremap <A-j> :m .+1<CR>==
+nnoremap <A-k> :m .-2<CR>==
+inoremap <A-j> <Esc>:m .+1<CR>==gi
+inoremap <A-k> <Esc>:m .-2<CR>==gi
+vnoremap <A-j> :m '>+1<CR>gv=gv
+vnoremap <A-k> :m '<-2<CR>gv=gv
+
+" coc-nvim configuration
 if has("patch-8.1.1564")
   set signcolumn=number
 else
@@ -52,8 +60,8 @@ else
 endif
 
 inoremap <silent><expr> <TAB>
-      \ pumvisible() ? "\<C-n>" :
       \ <SID>check_back_space() ? "\<TAB>" :
+      \ pumvisible() ? "\<C-n>" :
       \ coc#refresh()
 inoremap <expr><S-TAB> pumvisible() ? "\<C-p>" : "\<C-h>"
 
