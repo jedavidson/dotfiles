@@ -1,6 +1,8 @@
 # Command aliases
+DISABLE_LS_COLORS="true"
 alias vi="nvim"
 alias vim="nvim"
+alias ls="exa"
 alias cse="ssh $ZID@cse.unsw.edu.au"
 
 # Directory aliases
