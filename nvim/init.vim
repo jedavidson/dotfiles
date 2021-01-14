@@ -2,6 +2,7 @@
 call plug#begin('~/.vim/plugged')
     Plug 'itchyny/lightline.vim'
     Plug 'morhetz/gruvbox'
+    Plug 'sheerun/vim-polyglot'
     Plug 'neoclide/coc.nvim', {'branch': 'release'}
 call plug#end()
 
