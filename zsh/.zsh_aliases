@@ -4,6 +4,7 @@ alias vi="nvim"
 alias vim="nvim"
 alias ls="exa"
 alias cse="ssh $ZID@cse.unsw.edu.au"
+alias ':q'="exit"
 
 # Directory aliases
 alias dev="cd $HOME/dev"
