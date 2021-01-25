@@ -19,7 +19,7 @@ font:
 
 # Colour schemes
 schemes:
-  gruvbox:
+  gruvbox: &gruvbox
     primary:
       background: '#1d2021'
       foreground: '#ebdbb2'
@@ -41,7 +41,7 @@ schemes:
       magenta: '#d3869b'
       cyan:    '#8ec07c'
       white:   '#ebdbb2'
-  nord:
+  nord: &nord
     primary:
       background: '#2E3440'
       foreground: '#D8DEE9'
@@ -63,7 +63,7 @@ schemes:
       magenta: '#B48EAD'
       cyan:    '#8FBCBB'
       white:   '#ECEFF4'
-  base16:
+  base16: &base16
     primary:
       background: '#181818'
       foreground: '#d8d8d8'
@@ -85,9 +85,9 @@ schemes:
       magenta: '#ba8baf'
       cyan:    '#86c1b9'
       white:   '#f8f8f8'
-  tomorrow_dark_bright: &active
+  tomorrow_dark_bright: &tomorrow
     primary:
-      background: '#000000'
+      background: '#1d1f21' # if wanting black, use '000000'
       foreground: '#eaeaea'
     normal:
       black:   '#000000'
@@ -109,4 +109,4 @@ schemes:
       white:   '#bdbdbd'
 
 # Active colour scheme
-colors: *active
+colors: *tomorrow
