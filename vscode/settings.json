@@ -1,0 +1,66 @@
+{
+  // General settings
+  "workbench.startupEditor": "newUntitledFile",
+  "editor.suggestSelection": "first",
+
+  // Font settings
+  "editor.fontFamily": "Ubuntu Mono",
+  "terminal.integrated.fontFamily": "Ubuntu Mono",
+  "editor.fontSize": 17,
+  "terminal.integrated.fontSize": 17,
+
+  // Theme settings
+  "workbench.colorTheme": "Default Dark+",
+  "workbench.iconTheme": "material-icon-theme",
+  "gruvboxMaterial.italicComments": false,
+  "gruvboxMaterial.darkContrast": "hard",
+  "gruvboxMaterial.darkPalette": "original",
+  "gruvboxMaterial.darkWorkbench": "flat",
+  "material-icon-theme.activeIconPack": "react",
+  "material-icon-theme.folders.color": "#adadad",
+
+  // IntelliSense settings
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+
+  // Remote - SSH settings
+  "remote.SSH.lockfilesInTmp": true,
+  "remote.SSH.remoteServerListenOnSocket": true,
+  "remote.SSH.remotePlatform": {
+    "vscode.cse.unsw.edu.au": "linux"
+  },
+
+  // Markdown Preview Enhanced settings
+  "markdown-preview-enhanced.automaticallyShowPreviewOfMarkdownBeingEdited": true,
+  "markdown-preview-enhanced.previewTheme": "github-dark.css",
+
+  // Python extension settings
+  "python.showStartPage": false,
+  "python.linting.pylintUseMinimalCheckers": false,
+  // "python.testing.pytestEnabled": true,
+
+  // Prettier settings
+  "[javascript]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascriptreact]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescriptreact]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[jsonc]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
+}
