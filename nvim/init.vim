@@ -3,6 +3,7 @@
 call plug#begin('~/.vim/plugged')
     Plug 'itchyny/lightline.vim'
     Plug 'morhetz/gruvbox'
+    Plug 'chriskempson/base16-vim'
     Plug 'sheerun/vim-polyglot'
     Plug 'neoclide/coc.nvim', {'branch': 'release'}
 call plug#end()
@@ -17,7 +18,7 @@ if !has('gui_running')
   set t_Co=256
 endif
 let g:gruvbox_contrast_dark='hard'
-colorscheme gruvbox
+colorscheme base16-tomorrow-night
 
 " }}}
 
