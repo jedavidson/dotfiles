@@ -2,7 +2,10 @@
 set $mod Mod4
 
 # Font
-font pango:DejaVu Sans Mono 10
+font pango:Ubuntu Mono 12
+
+# Set wallpaper
+exec --no-startup-id feh --bg-fill $HOME/Pictures/Wallpapers/dark-waves.jpg
 
 # xss-lock and nm-applet combination
 exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
@@ -47,10 +50,8 @@ bindsym $mod+Shift+Down move down
 bindsym $mod+Shift+Up move up
 bindsym $mod+Shift+Right move right
 
-# Split in horizontal/vertical orientation
-# sure would be nice to have a better horizontal split key...
-bindsym $mod+b split h
-bindsym $mod+v split v
+# Toggle new window split direction
+bindsym $mod+t split toggle
 
 # Enter fullscreen mode for the focused container
 bindsym $mod+f fullscreen toggle
@@ -114,6 +115,9 @@ bindsym $mod+Shift+c reload
 
 # Restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
 bindsym $mod+Shift+r restart
+
+# Lock
+bindsym $mod+Escape exec "sh $DOTFILES/i3/blur/lock.sh"
 
 # Exit i3 (logs you out of your X session)
 bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -B 'Yes, exit i3' 'i3-msg exit'"
