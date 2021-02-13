@@ -2,6 +2,9 @@
 source $HOME/dev/dotfiles/zsh/.zsh_variables
 source $DOTFILES/zsh/.zsh_aliases
 
+# Set emacs keybindings
+set -o emacs
+
 # powerlevel10k configuration
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
