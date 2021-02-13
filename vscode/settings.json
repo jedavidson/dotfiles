@@ -16,8 +16,18 @@
   "gruvboxMaterial.darkContrast": "hard",
   "gruvboxMaterial.darkPalette": "original",
   "gruvboxMaterial.darkWorkbench": "flat",
+  "oneDarkPro.vivid": true,
+  "oneDarkPro.italic": false,
   "material-icon-theme.activeIconPack": "react",
   "material-icon-theme.folders.color": "#adadad",
+
+  // File exclusion settings
+  "files.exclude": {
+    "**/.classpath": true,
+    "**/.project": true,
+    "**/.settings": true,
+    "**/.factorypath": true
+  },
 
   // IntelliSense settings
   "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
