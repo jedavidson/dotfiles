@@ -81,9 +81,6 @@ set hidden
 set nobackup
 set nowritebackup
 
-" Give more space for displaying messages
-set cmdheight=2
-
 " ??? Another thing that coc.nvim recommended
 set shortmess+=c
 
