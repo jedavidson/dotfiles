@@ -21,6 +21,7 @@ run_cmd "curl -o vscode.deb -L http://go.microsoft.com/fwlink/?LinkID=760868"
 run_cmd "sudo apt install ./vscode.deb"
 run_cmd "rm vscode.deb"
 cd -
+# TODO: install plugins using code --install-extension [extID]
 
 # Install neovim
 echo "Installing Neovim..."
@@ -41,3 +42,4 @@ run_cmd "sudo apt install i3 rofi"
 
 # Finally, link all dotfiles
 # TODO
+
