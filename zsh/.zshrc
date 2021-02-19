@@ -1,6 +1,7 @@
-# Load environment variables and aliases
+# Load environment variables, aliases and functions
 source $HOME/dev/dotfiles/zsh/.zsh_variables
-source $DOTFILES/zsh/.zsh_aliases
+source $HOME/dev/dotfiles/zsh/.zsh_aliases
+source $HOME/dev/dotfiles/zsh/.zsh_functions
 
 # Set emacs keybindings
 set -o emacs

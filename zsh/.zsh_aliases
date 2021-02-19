@@ -1,8 +1,8 @@
 # Command aliases
 DISABLE_LS_COLORS="true"
+alias ls="exa"
 alias vi="nvim"
 alias vim="nvim"
-alias ls="exa"
 alias cse="ssh $ZID@cse.unsw.edu.au"
 alias ':q'="exit"
 alias nf="neofetch"
@@ -12,3 +12,5 @@ alias dev="cd $HOME/dev"
 alias dots="cd $DOTFILES"
 alias projects="cd $HOME/dev/projects"
 alias uni="cd $HOME/dev/university"
+alias sandbox="cd $HOME/dev/sandbox"
+
