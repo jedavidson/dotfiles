@@ -8,9 +8,6 @@
   "terminal.integrated.fontFamily": "Ubuntu Mono",
   "editor.fontSize": 17,
   "terminal.integrated.fontSize": 17,
-
-  // Theme settings
-  "workbench.colorTheme": "Default Dark+",
   "workbench.iconTheme": "material-icon-theme",
   "gruvboxMaterial.italicComments": false,
   "gruvboxMaterial.darkContrast": "hard",
@@ -20,6 +17,28 @@
   "oneDarkPro.italic": false,
   "material-icon-theme.activeIconPack": "react",
   "material-icon-theme.folders.color": "#adadad",
+  "workbench.colorCustomizations": {
+    // Replace the default terminal palette only when using Dark+
+    // These colours are the Tomorrow Dark Bright colours; same as Alacritty
+    "[Default Dark+]": {
+      "terminal.ansiBlack": "#000000",
+      "terminal.ansiBlue": "#7aa6da",
+      "terminal.ansiCyan": "#70c0ba",
+      "terminal.ansiGreen": "#b9ca4a",
+      "terminal.ansiMagenta": "#c397d8",
+      "terminal.ansiRed": "#d54e53",
+      "terminal.ansiWhite": "#d1d1d1",
+      "terminal.ansiYellow": "#e6c547",
+      "terminal.ansiBrightBlack": "#666666",
+      "terminal.ansiBrightBlue": "#7aa6da",
+      "terminal.ansiBrightCyan": "#54ced6",
+      "terminal.ansiBrightGreen": "#9ec400",
+      "terminal.ansiBrightMagenta": "#b77ee0",
+      "terminal.ansiBrightRed": "#ff3334",
+      "terminal.ansiBrightWhite": "#bdbdbd",
+      "terminal.ansiBrightYellow": "#e7c547"
+    }
+  },
 
   // File exclusion settings
   "files.exclude": {
@@ -39,14 +58,14 @@
     "vscode.cse.unsw.edu.au": "linux"
   },
 
-  // Markdown Preview Enhanced settings
-  "markdown-preview-enhanced.automaticallyShowPreviewOfMarkdownBeingEdited": true,
-  "markdown-preview-enhanced.previewTheme": "github-dark.css",
+  // C/C++ settings
+  "C_Cpp.updateChannel": "Insiders",
 
   // Python extension settings
   "python.showStartPage": false,
+  "python.languageServer": "Pylance",
   "python.linting.pylintUseMinimalCheckers": false,
-  // "python.testing.pytestEnabled": true,
+  // "python.testing.pytestEnabled": true, // enable when using pytest
 
   // Prettier settings
   "[javascript]": {
