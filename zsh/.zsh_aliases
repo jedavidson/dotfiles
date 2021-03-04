@@ -6,6 +6,7 @@ alias vim="nvim"
 alias cse="ssh $ZID@cse.unsw.edu.au"
 alias ':q'="exit"
 alias nf="neofetch"
+alias open="nautilus"
 
 # Directory aliases
 alias dev="cd $HOME/dev"
@@ -13,4 +14,8 @@ alias dots="cd $DOTFILES"
 alias projects="cd $HOME/dev/projects"
 alias uni="cd $HOME/dev/university"
 alias sandbox="cd $HOME/dev/sandbox"
+
+# University term specific aliases
+alias cs3131="cd $HOME/dev/university/cs3131"
+alias cs3891="cd $HOME/dev/university/cs3891"
 
