@@ -109,4 +109,4 @@ schemes:
       white:   '#bdbdbd'
 
 # Active colour scheme
-colors: *gruvbox
+colors: *tomorrow
