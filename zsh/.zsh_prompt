@@ -1,0 +1,31 @@
+# Set the prompt to 
+export ACTIVE_PROMPT_NAME="p10k"
+
+case $ACTIVE_PROMPT_NAME in
+    "p10k")
+        [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+        if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
+        source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
+        fi
+        ZSH_THEME="powerlevel10k/powerlevel10k"
+        ZLE_RPROMPT_INDENT=0
+        ;;
+    "spaceship")
+        ZSH_THEME="spaceship"
+        SPACESHIP_PROMPT_ORDER=(
+            user host dir git exec_time line_sep jobs exit_code char
+        )
+        SPACESHIP_RPROMPT_ORDER=(
+            time
+        )
+        SPACESHIP_PROMPT_ADD_NEWLINE=false
+        SPACESHIP_CHAR_SYMBOL="$ "
+        SPACESHIP_CHAR_SYMBOL_ROOT="# "
+        SPACESHIP_CHAR_SYMBOL_SECONDARY="> "
+        SPACESHIP_GIT_STATUS_DELETED="x"
+        SPACESHIP_GIT_STATUS_AHEAD=">"
+        SPACESHIP_GIT_STATUS_BEHIND="<"
+        SPACESHIP_GIT_STATUS_DIVERGED="Y"
+        ;;
+esac
+

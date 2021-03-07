@@ -5,3 +5,5 @@ export EDITOR="/usr/bin/nvim"
 
 export DOTFILES="$HOME/dev/dotfiles"
 export ZID="z5257605"
+
+export BAT_THEME="gruvbox"
