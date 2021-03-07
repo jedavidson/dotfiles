@@ -8,15 +8,18 @@
   "terminal.integrated.fontFamily": "Ubuntu Mono",
   "editor.fontSize": 17,
   "terminal.integrated.fontSize": 17,
+
+  // Theme settings
+  "workbench.colorTheme": "Default Dark+",
   "workbench.iconTheme": "material-icon-theme",
+  "material-icon-theme.activeIconPack": "react",
+  "material-icon-theme.folders.color": "#adadad",
   "gruvboxMaterial.italicComments": false,
   "gruvboxMaterial.darkContrast": "hard",
   "gruvboxMaterial.darkPalette": "original",
   "gruvboxMaterial.darkWorkbench": "flat",
   "oneDarkPro.vivid": true,
   "oneDarkPro.italic": false,
-  "material-icon-theme.activeIconPack": "react",
-  "material-icon-theme.folders.color": "#adadad",
   "workbench.colorCustomizations": {
     // Replace the default terminal palette only when using Dark+
     // These colours are the Tomorrow Dark Bright colours; same as Alacritty
@@ -65,7 +68,6 @@
   "python.showStartPage": false,
   "python.languageServer": "Pylance",
   "python.linting.pylintUseMinimalCheckers": false,
-  // "python.testing.pytestEnabled": true, // enable when using pytest
 
   // Prettier settings
   "[javascript]": {
