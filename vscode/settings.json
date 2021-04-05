@@ -2,15 +2,10 @@
   // General settings
   "workbench.startupEditor": "newUntitledFile",
   "editor.suggestSelection": "first",
-
-  // Font settings
-  "editor.fontFamily": "Ubuntu Mono",
-  "terminal.integrated.fontFamily": "Ubuntu Mono",
-  "editor.fontSize": 17,
-  "terminal.integrated.fontSize": 17,
+  "files.trimTrailingWhitespace": true,
 
   // Theme settings
-  "workbench.colorTheme": "Default Dark+",
+  "workbench.colorTheme": "Monokai Dimmed",
   "workbench.iconTheme": "material-icon-theme",
   "material-icon-theme.activeIconPack": "react",
   "material-icon-theme.folders.color": "#adadad",
@@ -18,30 +13,9 @@
   "gruvboxMaterial.darkContrast": "hard",
   "gruvboxMaterial.darkPalette": "original",
   "gruvboxMaterial.darkWorkbench": "flat",
+  "gruvboxMaterial.colorfulSyntax": true,
   "oneDarkPro.vivid": true,
   "oneDarkPro.italic": false,
-  "workbench.colorCustomizations": {
-    // Replace the default terminal palette only when using Dark+
-    // These colours are the Tomorrow Dark Bright colours; same as Alacritty
-    "[Default Dark+]": {
-      "terminal.ansiBlack": "#000000",
-      "terminal.ansiBlue": "#7aa6da",
-      "terminal.ansiCyan": "#70c0ba",
-      "terminal.ansiGreen": "#b9ca4a",
-      "terminal.ansiMagenta": "#c397d8",
-      "terminal.ansiRed": "#d54e53",
-      "terminal.ansiWhite": "#d1d1d1",
-      "terminal.ansiYellow": "#e6c547",
-      "terminal.ansiBrightBlack": "#666666",
-      "terminal.ansiBrightBlue": "#7aa6da",
-      "terminal.ansiBrightCyan": "#54ced6",
-      "terminal.ansiBrightGreen": "#9ec400",
-      "terminal.ansiBrightMagenta": "#b77ee0",
-      "terminal.ansiBrightRed": "#ff3334",
-      "terminal.ansiBrightWhite": "#bdbdbd",
-      "terminal.ansiBrightYellow": "#e7c547"
-    }
-  },
 
   // File exclusion settings
   "files.exclude": {
@@ -64,10 +38,24 @@
   // C/C++ settings
   "C_Cpp.updateChannel": "Insiders",
 
-  // Python extension settings
+  // Python settings
   "python.showStartPage": false,
   "python.languageServer": "Pylance",
   "python.linting.pylintUseMinimalCheckers": false,
+  "workbench.editorAssociations": [
+    {
+      "viewType": "jupyter.notebook.ipynb",
+      "filenamePattern": "*.ipynb"
+    }
+  ],
+
+  // LaTeX settings
+  "[latex]": {
+    "editor.wordWrap": "on",
+    "editor.formatOnPaste": false,
+    "editor.suggestSelection": "recentlyUsedByPrefix"
+  },
+  "latex-workshop.view.pdf.viewer": "tab",
 
   // Prettier settings
   "[javascript]": {
@@ -93,5 +81,5 @@
   "[jsonc]": {
     "editor.formatOnSave": true,
     "editor.defaultFormatter": "esbenp.prettier-vscode"
-  }
+  },
 }
