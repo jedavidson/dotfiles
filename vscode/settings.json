@@ -5,17 +5,17 @@
   "files.trimTrailingWhitespace": true,
 
   // Theme settings
-  "workbench.colorTheme": "Monokai Dimmed",
+  "workbench.colorTheme": "Default Dark+",
   "workbench.iconTheme": "material-icon-theme",
   "material-icon-theme.activeIconPack": "react",
   "material-icon-theme.folders.color": "#adadad",
+  "oneDarkPro.vivid": true,
+  "oneDarkPro.italic": false,
   "gruvboxMaterial.italicComments": false,
   "gruvboxMaterial.darkContrast": "hard",
   "gruvboxMaterial.darkPalette": "original",
   "gruvboxMaterial.darkWorkbench": "flat",
   "gruvboxMaterial.colorfulSyntax": true,
-  "oneDarkPro.vivid": true,
-  "oneDarkPro.italic": false,
 
   // File exclusion settings
   "files.exclude": {
@@ -81,5 +81,5 @@
   "[jsonc]": {
     "editor.formatOnSave": true,
     "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
+  }
 }
