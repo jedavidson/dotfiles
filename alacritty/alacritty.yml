@@ -1,5 +1,6 @@
 # Window settings
 window:
+  dynamic_title: true
   dimensions:
     columns: 80
     lines: 24
