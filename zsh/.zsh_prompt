@@ -1,14 +1,13 @@
-# Set the prompt to 
-export ACTIVE_PROMPT_NAME="p10k"
+# Set the active prompt here
+export ACTIVE_PROMPT_NAME="plain"
 
 case $ACTIVE_PROMPT_NAME in
     "p10k")
         [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
         if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
-        source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
+            source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
         fi
         ZSH_THEME="powerlevel10k/powerlevel10k"
-        ZLE_RPROMPT_INDENT=0
         ;;
     "spaceship")
         ZSH_THEME="spaceship"
@@ -27,5 +26,8 @@ case $ACTIVE_PROMPT_NAME in
         SPACESHIP_GIT_STATUS_BEHIND="<"
         SPACESHIP_GIT_STATUS_DIVERGED="Y"
         ;;
+    "plain")
+        ZSH_THEME="geoffgarside"
 esac
 
+ZLE_RPROMPT_INDENT=0
