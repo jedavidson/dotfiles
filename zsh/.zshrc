@@ -3,6 +3,7 @@ source $HOME/dev/dotfiles/zsh/.zsh_variables
 source $HOME/dev/dotfiles/zsh/.zsh_aliases
 source $HOME/dev/dotfiles/zsh/.zsh_functions
 source $HOME/dev/dotfiles/zsh/.zsh_prompt
+source $HOME/dev/dotfiles/zsh/.zsh_plugins
 
 # Set emacs keybindings
 set -o emacs

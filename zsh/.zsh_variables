@@ -1,10 +1,22 @@
+# Terminal mode, since alacritty isn't set to this by default
 export TERM="xterm-256color"
-export PATH="$HOME/bin:/usr/local/bin:$PATH:$HOME/.local/bin"
-export ZSH="/home/james/.oh-my-zsh"
-export EDITOR="/usr/local/bin/nvim"
-export MANPAGER="sh -c 'col -bx | bat -l man -p'"
 
+# Path
+export PATH="$HOME/bin:/usr/local/bin:$PATH:$HOME/.local/bin"
+
+# oh-my-zsh path
+export ZSH="/home/james/.oh-my-zsh"
+
+# Set dotfiles directory
 export DOTFILES="$HOME/dev/dotfiles"
+
+# Default editor: neovim
+export EDITOR="/usr/local/bin/nvim"
+
+# bat(1) settings
+export MANPAGER="sh -c 'col -bx | bat -l man -p'"
+export BAT_THEME="gruvbox"
+
+# Set zID (for UNSW CSE purposes)
 export ZID="z5257605"
 
-export BAT_THEME="gruvbox"
