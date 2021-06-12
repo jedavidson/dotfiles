@@ -1,21 +1,24 @@
 {
   // General settings
   "workbench.startupEditor": "newUntitledFile",
+  "workbench.editor.untitled.hint": "hidden",
   "editor.suggestSelection": "first",
   "files.trimTrailingWhitespace": true,
+
+  // Enable during tutoring
+  "window.zoomLevel": 1.5,
+
+  // Font settings
+  "editor.fontFamily": "MesloLGS NF",
+  "editor.fontSize": 14,
+  "terminal.integrated.fontFamily": "MesloLGS NF",
+  "terminal.integrated.fontSize": 14,
 
   // Theme settings
   "workbench.colorTheme": "Default Dark+",
   "workbench.iconTheme": "material-icon-theme",
   "material-icon-theme.activeIconPack": "react",
   "material-icon-theme.folders.color": "#adadad",
-  "oneDarkPro.vivid": true,
-  "oneDarkPro.italic": false,
-  "gruvboxMaterial.italicComments": false,
-  "gruvboxMaterial.darkContrast": "hard",
-  "gruvboxMaterial.darkPalette": "original",
-  "gruvboxMaterial.darkWorkbench": "flat",
-  "gruvboxMaterial.colorfulSyntax": true,
 
   // File exclusion settings
   "files.exclude": {
@@ -41,13 +44,11 @@
   // Python settings
   "python.showStartPage": false,
   "python.languageServer": "Pylance",
-  "python.linting.pylintUseMinimalCheckers": false,
-  "workbench.editorAssociations": [
-    {
-      "viewType": "jupyter.notebook.ipynb",
-      "filenamePattern": "*.ipynb"
-    }
-  ],
+  "python.testing.pytestArgs": ["."],
+  // "python.testing.pytestEnabled": true,
+  "workbench.editorAssociations": {
+    "*.ipynb": "jupyter.notebook.ipynb"
+  },
 
   // LaTeX settings
   "[latex]": {
