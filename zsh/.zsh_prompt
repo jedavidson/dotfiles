@@ -1,5 +1,5 @@
 # Set the active prompt here
-export ACTIVE_PROMPT_NAME="plain"
+export ACTIVE_PROMPT_NAME="p10k"
 
 case $ACTIVE_PROMPT_NAME in
     "p10k")
@@ -26,8 +26,10 @@ case $ACTIVE_PROMPT_NAME in
         SPACESHIP_GIT_STATUS_BEHIND="<"
         SPACESHIP_GIT_STATUS_DIVERGED="Y"
         ;;
-    "plain")
+    "plain1")
         ZSH_THEME="geoffgarside"
+        ;;
 esac
 
+# Regardless of the theme, disable any right indent
 ZLE_RPROMPT_INDENT=0
