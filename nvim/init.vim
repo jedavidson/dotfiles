@@ -1,9 +1,10 @@
 " Plugins {{{
 
 call plug#begin('~/.vim/plugged')
-    "Plug 'itchyny/lightline.vim'
+    Plug 'itchyny/lightline.vim'
     Plug 'morhetz/gruvbox'
-    Plug 'sheerun/vim-polyglot'
+    Plug 'chriskempson/base16-vim'
+    Plug 'jiangmiao/auto-pairs'
     Plug 'airblade/vim-gitgutter'
     Plug 'voldikss/vim-floaterm'
 call plug#end()
@@ -20,7 +21,7 @@ set termguicolors
 if !has('gui_running')
   set t_Co=256
 endif
-colorscheme gruvbox
+colorscheme base16-tomorrow-night
 
 " }}}
 
@@ -34,8 +35,8 @@ let mapleader=" "
 " Enable relative line numbering
 set number
 
+" Show simple status bar
 set laststatus=2
-set showtabline=2
 
 " Enable tab completion in command-mode menu
 set wildmenu
