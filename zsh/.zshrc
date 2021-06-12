@@ -5,6 +5,9 @@ source $HOME/dev/dotfiles/zsh/.zsh_functions
 source $HOME/dev/dotfiles/zsh/.zsh_prompt
 source $HOME/dev/dotfiles/zsh/.zsh_plugins
 
+# Enable zmv
+autoload zmv
+
 # Set emacs keybindings
 set -o emacs
 
