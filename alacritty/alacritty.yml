@@ -7,15 +7,15 @@ window:
 
 # Fonts
 font:
-  normal:
-    family: MesloLGS NF
-    style: Regular
-  bold:
-    family: MesloLGS NF
-    style: Bold
-  italic:
-    family: MesloLGS NF
-    style: Italic
+    normal:
+      family: Fira Code
+      style: Regular
+    bold:
+      family: Fira Code
+      style: Bold
+    italic:
+      family: Fira Code
+      style: Italic
 
 # Colour schemes
 schemes:
@@ -63,31 +63,34 @@ schemes:
       magenta: '#B48EAD'
       cyan:    '#8FBCBB'
       white:   '#ECEFF4'
-  base16: &base16
+  solarized_dark: &solarized
     primary:
-      background: '#181818'
-      foreground: '#d8d8d8'
+      background: '#002b36'
+      foreground: '#839496'
+    cursor:
+      text:    '#002b36'
+      cursor:  '#839496'
     normal:
-      black:   '#181818'
-      red:     '#ab4642'
-      green:   '#a1b56c'
-      yellow:  '#f7ca88'
-      blue:    '#7cafc2'
-      magenta: '#ba8baf'
-      cyan:    '#86c1b9'
-      white:   '#d8d8d8'
+      black:   '#073642'
+      red:     '#dc322f'
+      green:   '#859900'
+      yellow:  '#b58900'
+      blue:    '#268bd2'
+      magenta: '#d33682'
+      cyan:    '#2aa198'
+      white:   '#eee8d5'
     bright:
-      black:   '#585858'
-      red:     '#ab4642'
-      green:   '#a1b56c'
-      yellow:  '#f7ca88'
-      blue:    '#7cafc2'
-      magenta: '#ba8baf'
-      cyan:    '#86c1b9'
-      white:   '#f8f8f8'
+      black:   '#002b36'
+      red:     '#cb4b16'
+      green:   '#586e75'
+      yellow:  '#657b83'
+      blue:    '#839496'
+      magenta: '#6c71c4'
+      cyan:    '#93a1a1'
+      white:   '#fdf6e3'
   tomorrow_dark_bright: &tomorrow
     primary:
-      background: '#1d1f21' # if wanting black, use '000000'
+      background: '#1d1f21'
       foreground: '#eaeaea'
     normal:
       black:   '#000000'
