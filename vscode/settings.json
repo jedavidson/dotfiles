@@ -9,16 +9,23 @@
   "window.zoomLevel": 1.5,
 
   // Font settings
-  "editor.fontFamily": "MesloLGS NF",
+  "editor.fontFamily": "FiraCode Nerd Font Mono",
   "editor.fontSize": 14,
-  "terminal.integrated.fontFamily": "MesloLGS NF",
+  "terminal.integrated.fontFamily": "FiraCode Nerd Font Mono",
   "terminal.integrated.fontSize": 14,
 
   // Theme settings
-  "workbench.colorTheme": "Default Dark+",
+  "workbench.colorTheme": "Ayu Dark",
   "workbench.iconTheme": "material-icon-theme",
   "material-icon-theme.activeIconPack": "react",
   "material-icon-theme.folders.color": "#adadad",
+  "gruvboxMaterial.italicComments": false,
+  "gruvboxMaterial.darkContrast": "hard",
+  "gruvboxMaterial.darkPalette": "mix",
+  "gruvboxMaterial.darkWorkbench": "flat",
+
+  // Terminal settings
+  "terminal.integrated.tabs.enabled": false,
 
   // File exclusion settings
   "files.exclude": {
@@ -42,8 +49,7 @@
   "C_Cpp.updateChannel": "Insiders",
 
   // Python settings
-  "python.showStartPage": false,
-  "python.languageServer": "Pylance",
+  "python.showStartPage": false, "python.languageServer": "Pylance",
   "python.testing.pytestArgs": ["."],
   // "python.testing.pytestEnabled": true,
   "workbench.editorAssociations": {
@@ -82,5 +88,5 @@
   "[jsonc]": {
     "editor.formatOnSave": true,
     "editor.defaultFormatter": "esbenp.prettier-vscode"
-  }
+  },
 }
