@@ -12,6 +12,7 @@ alias open="nautilus"
 alias dev="cd $HOME/dev"
 alias dots="cd $DOTFILES"
 alias projects="cd $HOME/dev/projects"
-alias uni="cd $HOME/dev/university"
+alias uni="cd $HOME/dev/uni"
 alias sandbox="cd $HOME/dev/sandbox"
+alias tutoring="cd $HOME/dev/uni/tutoring"
 
