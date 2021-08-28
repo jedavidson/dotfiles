@@ -4,9 +4,9 @@ call plug#begin('~/.vim/plugged')
     Plug 'vim-airline/vim-airline'
     Plug 'vim-airline/vim-airline-themes'
     Plug 'morhetz/gruvbox'
-    Plug 'lifepillar/vim-solarized8'
+    Plug 'nanotech/jellybeans.vim'
     Plug 'chriskempson/base16-vim'
-    "Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
+    Plug 'sheerun/vim-polyglot'
     Plug 'jiangmiao/auto-pairs'
     Plug 'airblade/vim-gitgutter'
     Plug 'voldikss/vim-floaterm'
@@ -20,13 +20,9 @@ call plug#end()
 syntax on
 set background=dark
 
-hi Comment ctermbg=0
 set termguicolors
 set t_Co=256
-colorscheme base16-tomorrow-night
-
-" Once treesitter isn't dead, uncomment this
-"lua require'nvim-treesitter.configs'.setup { highlight = { enable = true } }
+colorscheme jellybeans
 
 " }}}
 
@@ -100,3 +96,4 @@ vnoremap <A-j> :m '>+1<CR>gv=gv
 vnoremap <A-k> :m '<-2<CR>gv=gv
 
 " }}}
+
