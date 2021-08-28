@@ -4,24 +4,29 @@
   "workbench.editor.untitled.hint": "hidden",
   "editor.suggestSelection": "first",
   "files.trimTrailingWhitespace": true,
+  "security.workspace.trust.untrustedFiles": "open",
 
   // Enable during tutoring
-  "window.zoomLevel": 1.5,
+  // "window.zoomLevel": 1.5,
 
   // Font settings
-  "editor.fontFamily": "FiraCode Nerd Font Mono",
-  "editor.fontSize": 14,
-  "terminal.integrated.fontFamily": "FiraCode Nerd Font Mono",
-  "terminal.integrated.fontSize": 14,
+  "editor.fontFamily": "Iosevka Nerd Font Mono",
+  "editor.fontSize": 16,
+  "terminal.integrated.fontFamily": "Iosevka Nerd Font Mono",
+  "terminal.integrated.fontSize": 16,
 
   // Theme settings
-  "workbench.colorTheme": "Ayu Dark",
+  "workbench.colorTheme": "One Dark Pro Darker",
   "workbench.iconTheme": "material-icon-theme",
   "material-icon-theme.activeIconPack": "react",
   "material-icon-theme.folders.color": "#adadad",
+  "oneDarkPro.italic": false,
+  "oneDarkPro.bold": true,
+  "oneDarkPro.vivid": true,
+  "oneDarkPro.editorTheme": "oneDarkPro",
   "gruvboxMaterial.italicComments": false,
   "gruvboxMaterial.darkContrast": "hard",
-  "gruvboxMaterial.darkPalette": "mix",
+  "gruvboxMaterial.darkPalette": "original",
   "gruvboxMaterial.darkWorkbench": "flat",
 
   // Terminal settings
@@ -49,11 +54,21 @@
   "C_Cpp.updateChannel": "Insiders",
 
   // Python settings
-  "python.showStartPage": false, "python.languageServer": "Pylance",
+  "python.analysis.typeCheckingMode": "basic",
+  "python.languageServer": "Pylance",
   "python.testing.pytestArgs": ["."],
   // "python.testing.pytestEnabled": true,
   "workbench.editorAssociations": {
-    "*.ipynb": "jupyter.notebook.ipynb"
+    "*.ipynb": "jupyter-notebook"
+  },
+  "notebook.cellToolbarLocation": {
+    "default": "right",
+    "jupyter-notebook": "left"
+  },
+
+  // Haskell settings
+  "[haskell]": {
+    "editor.tabSize": 2
   },
 
   // LaTeX settings
@@ -64,29 +79,35 @@
   },
   "latex-workshop.view.pdf.viewer": "tab",
 
-  // Prettier settings
+  // JavaScript settings
   "[javascript]": {
     "editor.formatOnSave": true,
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.tabSize": 2
   },
   "[javascriptreact]": {
     "editor.formatOnSave": true,
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.tabSize": 2
   },
   "[typescript]": {
     "editor.formatOnSave": true,
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.tabSize": 2
   },
   "[typescriptreact]": {
     "editor.formatOnSave": true,
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.tabSize": 2
   },
   "[json]": {
     "editor.formatOnSave": true,
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.tabSize": 2
   },
   "[jsonc]": {
     "editor.formatOnSave": true,
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.tabSize": 2
+  }
 }
