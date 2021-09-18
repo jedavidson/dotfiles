@@ -2,7 +2,7 @@
 export TERM="xterm-256color"
 
 # Path
-export PATH="$HOME/bin:/usr/local/bin:$PATH:$HOME/.local/bin"
+export PATH="$HOME/bin:/usr/local/bin:$PATH:$HOME/.local/bin:$HOME/pgsql/bin"
 
 # oh-my-zsh path
 export ZSH="/home/james/.oh-my-zsh"
@@ -19,4 +19,5 @@ export BAT_THEME="gruvbox"
 
 # Set zID (for UNSW CSE purposes)
 export ZID="z5257605"
+
 
