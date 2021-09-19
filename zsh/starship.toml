@@ -25,7 +25,7 @@ time_range      = "00:00:00-23:59:59"
 
 # Command duration indicator
 [cmd_duration]
-style = "bold #757575"
+style = "bold bright-black"
 
 # Truncate cwd shown fish-style
 [directory]
