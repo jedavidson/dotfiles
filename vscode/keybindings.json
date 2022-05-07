@@ -1,7 +1,0 @@
-[
-  {
-    "key": "ctrl+k",
-    "command": "deleteAllRight",
-    "when": "terminalFocus"
-  }
-]
