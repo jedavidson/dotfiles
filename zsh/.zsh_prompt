@@ -1,0 +1,22 @@
+# Set the active prompt here
+export ACTIVE_PROMPT_NAME="plain1"
+
+case $ACTIVE_PROMPT_NAME in
+    "p10k")
+        [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+        if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
+            source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
+        fi
+        ZSH_THEME="powerlevel10k/powerlevel10k"
+        ;;
+    "starship")
+        eval "$(starship init zsh)"
+        ;;
+    "plain1")
+        ZSH_THEME="geoffgarside"
+        ;;
+esac
+
+# Disable right prompt indent
+ZLE_RPROMPT_INDENT=0
+

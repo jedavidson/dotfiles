@@ -1,0 +1,16 @@
+# Command aliases
+DISABLE_LS_COLORS="true"
+alias vi="nvim"
+alias vim="nvim"
+alias ls="exa"
+alias cse="ssh $ZID@cse.unsw.edu.au"
+alias ':q'="exit"
+
+# Source aliases for reloading configurations
+alias rz="source $HOME/.zshrc"
+
+# Directory aliases
+alias dots="cd $DOTFILES"
+# TODO: fix
+alias projects="cd $HOME/dev/projects"
+alias uni="cd $HOME/dev/university"

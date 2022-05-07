@@ -1,0 +1,85 @@
+{
+  "workbench.startupEditor": "newUntitledFile",
+  "workbench.editor.untitled.hint": "hidden",
+  "files.trimTrailingWhitespace": true,
+  "security.workspace.trust.untrustedFiles": "open",
+  "editor.suggestSelection": "first",
+  "editor.suggest.preview": false,
+  "editor.bracketPairColorization.enabled": true,
+
+  // Font settings
+  "editor.fontSize": 13,
+  "terminal.integrated.fontSize": 13,
+
+  // Theme settings
+  "workbench.colorTheme": "Material Theme Ocean",
+  "workbench.iconTheme": "material-icon-theme",
+  "material-icon-theme.activeIconPack": "react",
+  "material-icon-theme.folders.color": "#adadad",
+  "gruvboxMaterial.darkContrast": "hard",
+  "gruvboxMaterial.darkPalette": "mix",
+  "gruvboxMaterial.italicComments": false,
+  "gruvboxMaterial.darkWorkbench": "flat",
+  "oneDarkPro.italic": false,
+  "oneDarkPro.vivid": true,
+
+  // File exclusion settings
+  "files.exclude": {
+    "**/.classpath": true,
+    "**/.project": true,
+    "**/.settings": true,
+    "**/.factorypath": true,
+    "__pycache__": true,
+    ".pytest_cache": true,
+    ".DS_Store": true
+  },
+
+  // Python settings
+  "python.languageServer": "Pylance",
+  "python.analysis.typeCheckingMode": "basic",
+  "python.testing.pytestArgs": ["."],
+
+  // LaTeX settings
+  "[latex]": {
+    "editor.wordWrap": "on",
+    "editor.formatOnPaste": false
+  },
+
+  // Prettier settings
+  "[javascript]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascriptreact]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescriptreact]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[jsonc]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+
+  // SSHFS settings
+  "sshfs.configs": [
+    {
+      "name": "cse",
+      "root": "~/cs/tutoring/22t1/cs2521/wk4", // Change this
+      "username": "z5257605",
+      "host": "login5.cse.unsw.edu.au",
+      "privateKeyPath": "$HOME/.ssh/id_rsa"
+    }
+  ],
+  "sshfs.flags": ["REMOTE_COMMANDS"]
+}
