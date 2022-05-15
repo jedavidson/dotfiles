@@ -1,9 +1,0 @@
-# Automatically cd into a directory upon creation
-mkcd () {
-    mkdir $1 && cd $1
-}
-
-# Automatically show contents of a directory after cd
-cdls () {
-    cd $1 && ls
-}
