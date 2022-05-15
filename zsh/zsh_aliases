@@ -1,0 +1,6 @@
+# Directory aliases for Windows
+alias dl="cd $WINHOME/Downloads"
+alias docs="cd $WINHOME/Documents"
+
+alias cse='ssh z5257605@cse.unsw.edu.au'
+alias wfm='explorer.exe'

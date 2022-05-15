@@ -1,0 +1,15 @@
+source $HOME/dotfiles/zsh/zsh_variables
+source $HOME/dotfiles/zsh/zsh_aliases
+source $HOME/dotfiles/zsh/zsh_prompt
+
+unsetopt beep
+
+autoload zmv
+
+plugins=(
+    git
+    zsh-autosuggestions
+    zsh-syntax-highlighting
+)
+
+source $ZSH/oh-my-zsh.sh
