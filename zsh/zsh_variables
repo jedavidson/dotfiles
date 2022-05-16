@@ -2,3 +2,6 @@ export PATH=$HOME/bin:/usr/local/bin:$HOME/.local/bin:$PATH
 export ZSH=$HOME/.oh-my-zsh
 export TERM="xterm-256color"
 export WINHOME="/mnt/c/users/jdavi"
+
+# Config files which don't live in the WSL file system
+export ALACRITTY_CONFIG="$WINHOME/AppData/Roaming/alacritty/alacritty.yml"

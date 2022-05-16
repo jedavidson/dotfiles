@@ -1,6 +1,13 @@
+DISABLE_LS_COLORS="true"
+alias ls="exa"
+alias bat="batcat"
+
 # Directory aliases for Windows
 alias dl="cd $WINHOME/Downloads"
 alias docs="cd $WINHOME/Documents"
+
+# Dotfiles-specific aliases
+alias dots="cd $HOME/dotfiles"
 
 alias cse='ssh z5257605@cse.unsw.edu.au'
 alias wfm='explorer.exe'

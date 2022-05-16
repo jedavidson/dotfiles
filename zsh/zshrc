@@ -1,9 +1,9 @@
 source $HOME/dotfiles/zsh/zsh_variables
 source $HOME/dotfiles/zsh/zsh_aliases
 source $HOME/dotfiles/zsh/zsh_prompt
+source $HOME/dotfiles/zsh/zsh_plugins
 
 unsetopt beep
-
 autoload zmv
 
 plugins=(
