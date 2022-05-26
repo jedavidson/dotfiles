@@ -13,7 +13,7 @@ case $ACTIVE_PROMPT_NAME in
         eval "$(starship init zsh)"
         ;;
     "plain1")
-        ZSH_THEME="geoffgarside"
+        ZSH_THEME="fishy"
         ;;
 esac
 

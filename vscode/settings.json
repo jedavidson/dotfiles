@@ -8,11 +8,13 @@
   "editor.bracketPairColorization.enabled": true,
 
   // Font settings
-  "editor.fontSize": 13,
-  "terminal.integrated.fontSize": 13,
+  "editor.fontSize": 12,
+  "terminal.integrated.fontSize": 12,
+
+  // Terminal settings
+  "terminal.integrated.allowChords": false,
 
   // Theme settings
-  "workbench.colorTheme": "Material Theme Ocean",
   "workbench.iconTheme": "material-icon-theme",
   "material-icon-theme.activeIconPack": "react",
   "material-icon-theme.folders.color": "#adadad",
