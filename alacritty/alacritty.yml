@@ -7,16 +7,16 @@ window:
 
 # Fonts
 font:
-    normal:
-      family: DejaVuSansMono Nerd Font Mono
-      style: Regular
-    bold:
-      family: DejaVuSansMono Nerd Font Mono
-      style: Bold
-    italic:
-      family: DejaVuSansMono Nerd Font Mono
-      style: Italic
-    size: 10
+  normal:
+    family: DejaVuSansMono Nerd Font Mono
+    style: Regular
+  bold:
+    family: DejaVuSansMono Nerd Font Mono
+    style: Bold
+  italic:
+    family: DejaVuSansMono Nerd Font Mono
+    style: Italic
+  size: 10
 
 # Colour schemes
 schemes:

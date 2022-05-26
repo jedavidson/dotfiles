@@ -7,8 +7,8 @@ disabled = true
 
 # Update prompt character on success and error
 [character]
-success_symbol = "[\n|](bold gray)" # = "[\n::](bold green)"
-error_symbol   = "[\n|](bold red)" # = "[\n!!](bold red)"
+success_symbol = "[\n|](bold gray)"
+error_symbol   = "[\n|](bold red)"
 
 # Show machine username
 [username]
