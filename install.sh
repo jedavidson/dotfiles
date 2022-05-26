@@ -1,45 +1,26 @@
 #!/usr/bin/bash
 
-run_cmd () {
-    sh $1 > /dev/null 2>&1
-    if [[ $1 != 0 ]]; then
-        echo "[!] Uh oh! Something went wrong."
-        exit
-    fi
-}
-
-# Install Alacritty
-echo "Installing Alacritty..."
-run_cmd "sudo add-apt-repository ppa:mmstick76/alacritty && sudo apt-get update"
-run_cmd "sudo apt install alacritty"
-
-# Install VSCode
-# https://github.com/Microsoft/vscode/issues/15529
-echo "Installing VSCode..."
-cd /tmp
-run_cmd "curl -o vscode.deb -L http://go.microsoft.com/fwlink/?LinkID=760868"
-run_cmd "sudo apt install ./vscode.deb"
-run_cmd "rm vscode.deb"
-cd -
-# TODO: install plugins using code --install-extension [extID]
-
-# Install neovim
-echo "Installing Neovim..."
-run_cmd "sudo apt install neovim"
+# TODO: install other tools
 
 # Install Rust and some nice command line utilities
-# This may take a while
 echo "Installing Rust and assorted shell utils..."
-run_cmd "curl https://sh.rustup.rs -sSf | sh"
-run_cmd "cargo install exa"
-run_cmd "cargo install fd-find"
-run_cmd "cargo install sd"
-run_cmd "cargo install --locked bat"
+curl https://sh.rustup.rs -sSf | sh
+cargo install exa
+cargo install fd-find
+cargo install sd
+cargo install --locked bat
 
-# Install i3
-echo "Installing i3..."
-run_cmd "sudo apt install i3 rofi"
-
-# Finally, link all dotfiles
-# TODO
-
+# Link dotfiles
+ln -svf $HOME/dotfiles/zsh/zshrc $HOME/.zshrc
+ln -svf $HOME/dotfiles/ghc/ghci $HOME/.ghci
+ln -svf $HOME/dotfiles/git/gitconfig $HOME/.gitconfig
+ln -svf $HOME/dotfiles/rofi/config $HOME/.config/rofi/config
+ln -svf $HOME/dotfiles/alacritty/alacritty.yml $HOME/.config/alacritty/alacritty.yml
+ln -svf $HOME/dotfiles/i3/i3config $HOME/.config/i3/config
+ln -svf $HOME/dotfiles/vscode/settings.json $HOME/.config/Code/User/settings.json
+ln -svf $HOME/dotfiles/vscode/snippets $HOME/.config/Code/User/snippets
+ln -svf $HOME/dotfiles/vscode/keybindings.json $HOME/.config/Code/User/keybindings.json
+ln -svf $HOME/dotfiles/zsh/starship.toml $HOME/.config/starship.toml
+ln -svf $HOME/dotfiles/nvim/init.vim $HOME/.config/nvim/init.vim
+ln -svf $HOME/dotfiles/tmux/tmux.conf $HOME/.tmux.conf
+ln -svf $HOME/dotfiles/zsh/p10k.zsh $HOME/.p10k.zsh
