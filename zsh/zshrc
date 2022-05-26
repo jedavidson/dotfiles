@@ -1,9 +1,9 @@
 # Load environment variables, aliases, functions and prompt
-source $HOME/dev/dotfiles/zsh/.zsh_variables
-source $HOME/dev/dotfiles/zsh/.zsh_aliases
-source $HOME/dev/dotfiles/zsh/.zsh_functions
-source $HOME/dev/dotfiles/zsh/.zsh_prompt
-source $HOME/dev/dotfiles/zsh/.zsh_plugins
+source $HOME/dotfiles/zsh/zsh_variables
+source $HOME/dotfiles/zsh/zsh_aliases
+source $HOME/dotfiles/zsh/zsh_functions
+source $HOME/dotfiles/zsh/zsh_prompt
+source $HOME/dotfiles/zsh/zsh_plugins
 
 # Enable zmv
 autoload zmv
@@ -25,4 +25,3 @@ plugins=(
 
 # Load oh-my-zsh
 source $ZSH/oh-my-zsh.sh
-

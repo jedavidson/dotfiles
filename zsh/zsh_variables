@@ -2,22 +2,24 @@
 export TERM="xterm-256color"
 
 # Path
-export PATH="$HOME/bin:/usr/local/bin:$PATH:$HOME/.local/bin:$HOME/pgsql/bin"
+export PATH="$PATH:$HOME/bin:/usr/local/bin:$HOME/.local/bin"
+
+# pyenv
+export PATH="$PATH:$HOME/.pyenv/bin"
 
 # oh-my-zsh path
 export ZSH="/home/james/.oh-my-zsh"
 
 # Set dotfiles directory
-export DOTFILES="$HOME/dev/dotfiles"
+export DOTFILES="$HOME/dotfiles"
 
 # Default editor: neovim
 export EDITOR="/usr/local/bin/nvim"
 
 # bat(1) settings
 export MANPAGER="sh -c 'col -bx | bat -l man -p'"
-export BAT_THEME="gruvbox"
+export BAT_THEME="Solarized (dark)"
 
 # Set zID (for UNSW CSE purposes)
 export ZID="z5257605"
-
 

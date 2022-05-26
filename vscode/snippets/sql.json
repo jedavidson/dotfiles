@@ -1,0 +1,20 @@
+{
+  "View": {
+    "prefix": ["create view", "view"],
+    "body": ["create or replace view $1 as (", "\t$2", ");"],
+    "description": "Define a view"
+  },
+  "Function": {
+    "prefix": ["create function", "function"],
+    "body": [
+      "create or replace function $1($2) returns $3 as $$",
+      "declare",
+      "\t",
+      "begin",
+      "\t",
+      "end;",
+      "$$ language plpgsql;"
+    ],
+    "description": "Define a function"
+  }
+}

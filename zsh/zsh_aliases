@@ -9,19 +9,9 @@ alias nf="neofetch"
 alias open="nautilus"
 
 # Directory aliases
-alias dev="cd $HOME/dev"
 alias dots="cd $DOTFILES"
+alias dev="cd $HOME/dev"
 alias projects="cd $HOME/dev/projects"
 alias uni="cd $HOME/dev/uni"
 alias sandbox="cd $HOME/dev/sandbox"
-alias tutoring="cd $HOME/dev/uni/tutoring"
-
-# Isabelle aliases
-alias isabelle="~/dev/sandbox/Isabelle2021/Isabelle2021"
-
-# PostgresQL aliases
-alias pgstart="sudo service postgresql start"
-alias pg1="pgstart"
-alias pgstop="sudo service postgresql stop"
-alias pg0="pgstop"
-
+alias tutoring="cd $HOME/dev/tutoring"

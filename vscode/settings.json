@@ -2,35 +2,32 @@
   // General settings
   "workbench.startupEditor": "newUntitledFile",
   "workbench.editor.untitled.hint": "hidden",
-  "editor.suggestSelection": "first",
   "files.trimTrailingWhitespace": true,
   "security.workspace.trust.untrustedFiles": "open",
+  "editor.suggest.preview": false,
+  "editor.inlineSuggest.enabled": true,
+  "editor.suggestSelection": "first",
 
-  // Enable during tutoring
-  // "window.zoomLevel": 1.5,
-
-  // Font settings
-  "editor.fontFamily": "Iosevka Nerd Font Mono",
-  "editor.fontSize": 16,
-  "terminal.integrated.fontFamily": "Iosevka Nerd Font Mono",
-  "terminal.integrated.fontSize": 16,
-
-  // Theme settings
-  "workbench.colorTheme": "One Dark Pro Darker",
+  // Theme plugin settings
+  "editor.bracketPairColorization.enabled": true,
   "workbench.iconTheme": "material-icon-theme",
-  "material-icon-theme.activeIconPack": "react",
-  "material-icon-theme.folders.color": "#adadad",
   "oneDarkPro.italic": false,
   "oneDarkPro.bold": true,
   "oneDarkPro.vivid": true,
-  "oneDarkPro.editorTheme": "oneDarkPro",
+  "oneDarkPro.editorTheme": "Solarized",
+  "gruvboxMaterial.darkPalette": "mix",
   "gruvboxMaterial.italicComments": false,
   "gruvboxMaterial.darkContrast": "hard",
-  "gruvboxMaterial.darkPalette": "original",
   "gruvboxMaterial.darkWorkbench": "flat",
+  "material-icon-theme.activeIconPack": "react",
+  "material-icon-theme.folders.color": "#adadad",
+  // "editor.renderWhitespace": true,
 
-  // Terminal settings
-  "terminal.integrated.tabs.enabled": false,
+  // Font settings
+  "editor.fontFamily": "DejaVuSansMono Nerd Font Mono",
+  "editor.fontSize": 13,
+  "terminal.integrated.fontFamily": "DejaVuSansMono Nerd Font Mono",
+  "terminal.integrated.fontSize": 13,
 
   // File exclusion settings
   "files.exclude": {
@@ -50,9 +47,6 @@
     "vscode.cse.unsw.edu.au": "linux"
   },
 
-  // C/C++ settings
-  "C_Cpp.updateChannel": "Insiders",
-
   // Python settings
   "python.analysis.typeCheckingMode": "basic",
   "python.languageServer": "Pylance",
@@ -68,7 +62,8 @@
 
   // Haskell settings
   "[haskell]": {
-    "editor.tabSize": 2
+    "editor.tabSize": 2,
+    "editor.suggest.preview": false
   },
 
   // LaTeX settings
@@ -109,5 +104,20 @@
     "editor.formatOnSave": true,
     "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.tabSize": 2
-  }
+  },
+
+  // SQL settings
+  "[sql]": {
+    "editor.tabSize": 2
+  },
+
+  // GitHub Copilot settings
+  "github.copilot.enable": {
+    "*": false,
+    "yaml": false,
+    "plaintext": false,
+    "markdown": false
+  },
+  "workbench.colorTheme": "One Dark Pro Darker"
+  // "window.zoomLevel": 2
 }
