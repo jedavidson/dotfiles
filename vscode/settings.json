@@ -7,9 +7,11 @@
   "editor.suggest.preview": false,
   "editor.inlineSuggest.enabled": true,
   "editor.suggestSelection": "first",
+  "editor.bracketPairColorization.enabled": false,
+  "editor.renderWhitespace": "boundary",
 
   // Theme plugin settings
-  "editor.bracketPairColorization.enabled": true,
+  "workbench.colorTheme": "Monokai Dimmed",
   "workbench.iconTheme": "material-icon-theme",
   "oneDarkPro.italic": false,
   "oneDarkPro.bold": true,
@@ -21,7 +23,6 @@
   "gruvboxMaterial.darkWorkbench": "flat",
   "material-icon-theme.activeIconPack": "react",
   "material-icon-theme.folders.color": "#adadad",
-  // "editor.renderWhitespace": true,
 
   // Font settings
   "editor.fontFamily": "DejaVuSansMono Nerd Font Mono",
@@ -51,7 +52,7 @@
   "python.analysis.typeCheckingMode": "basic",
   "python.languageServer": "Pylance",
   "python.testing.pytestArgs": ["."],
-  // "python.testing.pytestEnabled": true,
+  "python.testing.pytestEnabled": true,
   "workbench.editorAssociations": {
     "*.ipynb": "jupyter-notebook"
   },
@@ -59,6 +60,10 @@
     "default": "right",
     "jupyter-notebook": "left"
   },
+
+  // C/C++ settings
+  "C_Cpp.intelliSenseEngine": "Disabled",
+  "clangd.onConfigChanged": "restart",
 
   // Haskell settings
   "[haskell]": {
@@ -117,7 +122,5 @@
     "yaml": false,
     "plaintext": false,
     "markdown": false
-  },
-  "workbench.colorTheme": "One Dark Pro Darker"
-  // "window.zoomLevel": 2
+  }
 }
