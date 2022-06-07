@@ -165,4 +165,4 @@ schemes:
       white:   '#bdbdbd'
 
 # Active colour scheme
-colors: *onedark
+# colors: *onedark

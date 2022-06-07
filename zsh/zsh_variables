@@ -4,9 +4,6 @@ export TERM="xterm-256color"
 # Path
 export PATH="$PATH:$HOME/bin:/usr/local/bin:$HOME/.local/bin"
 
-# pyenv
-export PATH="$PATH:$HOME/.pyenv/bin"
-
 # oh-my-zsh path
 export ZSH="/home/james/.oh-my-zsh"
 

@@ -19,7 +19,7 @@ show_always = true
 # Show current timestamp
 [time]
 disabled        = true
-format          = '[ \[$time\] ]($style)'
+format          = '[\[$time\]]($style)'
 time_format     = "%T"
 utc_time_offset = "10"
 time_range      = "00:00:00-23:59:59"
