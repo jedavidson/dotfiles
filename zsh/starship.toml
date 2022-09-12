@@ -12,7 +12,6 @@ error_symbol   = "[\n|](bold red)"
 
 # Show machine username
 [username]
-style_user  = "bold green"
 disabled    = false
 show_always = true
 
@@ -30,5 +29,4 @@ style = "bold bright-black"
 
 # Truncate cwd shown fish-style
 [directory]
-style = "bold blue"
 fish_style_pwd_dir_length = 1
