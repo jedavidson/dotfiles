@@ -1,5 +1,5 @@
 # Set the active prompt here
-export ACTIVE_PROMPT_NAME="plain1"
+export ACTIVE_PROMPT_NAME="starship"
 
 case $ACTIVE_PROMPT_NAME in
     "p10k")

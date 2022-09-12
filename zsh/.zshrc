@@ -2,6 +2,7 @@
 source $HOME/dotfiles/zsh/.zsh_variables
 source $DOTFILES/zsh/.zsh_aliases
 source $DOTFILES/zsh/.zsh_prompt
+source $DOTFILES/zsh/.zshenv
 
 # Set emacs keybindings
 set -o emacs
