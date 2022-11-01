@@ -1,4 +1,5 @@
 # Load environment variables, aliases, functions and prompt
+source $HOME/dotfiles/zsh/zshenv  # could probably make this a symlink
 source $HOME/dotfiles/zsh/zsh_variables
 source $HOME/dotfiles/zsh/zsh_aliases
 source $HOME/dotfiles/zsh/zsh_functions
@@ -23,5 +24,8 @@ plugins=(
     nvm
 )
 
+eval $(thefuck --alias)
+
 # Load oh-my-zsh
 source $ZSH/oh-my-zsh.sh
+
