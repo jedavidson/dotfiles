@@ -7,5 +7,5 @@ if !has('gui_running')
 endif
 
 let g:gruvbox_contrast_dark='hard'
-colorscheme jellybeans
+colorscheme base16-tomorrow-night
 
