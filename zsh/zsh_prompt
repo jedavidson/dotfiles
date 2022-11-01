@@ -3,10 +3,10 @@ export ACTIVE_PROMPT_NAME="starship"
 
 case $ACTIVE_PROMPT_NAME in
     "p10k")
-        [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
         if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
             source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
         fi
+        [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
         ZSH_THEME="powerlevel10k/powerlevel10k"
         ;;
     "starship")
