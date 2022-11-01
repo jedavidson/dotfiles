@@ -5,142 +5,21 @@ window:
     columns: 83
     lines: 25
 
-# Fonts
+# Fonts font:
 font:
   normal:
-    family: DejaVuSansMono Nerd Font Mono
+    family: SauceCodePro Nerd Font Mono
     style: Regular
   bold:
-    family: DejaVuSansMono Nerd Font Mono
+    family: SauceCodePro Nerd Font Mono
     style: Bold
   italic:
-    family: DejaVuSansMono Nerd Font Mono
+    family: SauceCodePro Nerd Font Mono
     style: Italic
   size: 10
 
 # Colour schemes
 schemes:
-  gruvbox: &gruvbox
-    primary:
-      background: '#1d2021'
-      foreground: '#ebdbb2'
-    normal:
-      black:   '#282828'
-      red:     '#cc241d'
-      green:   '#98971a'
-      yellow:  '#d79921'
-      blue:    '#458588'
-      magenta: '#b16286'
-      cyan:    '#689d6a'
-      white:   '#a89984'
-    bright:
-      black:   '#928374'
-      red:     '#fb4934'
-      green:   '#b8bb26'
-      yellow:  '#fabd2f'
-      blue:    '#83a598'
-      magenta: '#d3869b'
-      cyan:    '#8ec07c'
-      white:   '#ebdbb2'
-  gruvbox_material: &gruvbox_material
-    primary:
-      background: '0x1d2021'
-      foreground: '0xd4be98'
-    normal:
-      black:   '0x32302f'
-      red:     '0xea6962'
-      green:   '0xa9b665'
-      yellow:  '0xd8a657'
-      blue:    '0x7daea3'
-      magenta: '0xd3869b'
-      cyan:    '0x89b482'
-      white:   '0xd4be98'
-    bright:
-      black:   '0x32302f'
-      red:     '0xea6962'
-      green:   '0xa9b665'
-      yellow:  '0xd8a657'
-      blue:    '0x7daea3'
-      magenta: '0xd3869b'
-      cyan:    '0x89b482'
-      white:   '0xd4be98'
-  nord: &nord
-    primary:
-      background: '#2E3440'
-      foreground: '#D8DEE9'
-    normal:
-      black:   '#3B4252'
-      red:     '#BF616A'
-      green:   '#A3BE8C'
-      yellow:  '#EBCB8B'
-      blue:    '#81A1C1'
-      magenta: '#B48EAD'
-      cyan:    '#88C0D0'
-      white:   '#E5E9F0'
-    bright:
-      black:   '#4C566A'
-      red:     '#BF616A'
-      green:   '#A3BE8C'
-      yellow:  '#EBCB8B'
-      blue:    '#81A1C1'
-      magenta: '#B48EAD'
-      cyan:    '#8FBCBB'
-      white:   '#ECEFF4'
-  solarized_dark: &solarized
-    primary:
-      background: '#002b36'
-      foreground: '#839496'
-    cursor:
-      text:    '#002b36'
-      cursor:  '#839496'
-    normal:
-      black:   '#073642'
-      red:     '#dc322f'
-      green:   '#859900'
-      yellow:  '#b58900'
-      blue:    '#268bd2'
-      magenta: '#d33682'
-      cyan:    '#2aa198'
-      white:   '#eee8d5'
-    bright:
-      black:   '#006680'
-      red:     '#dc322f'
-      green:   '#859900'
-      yellow:  '#b58900'
-      blue:    '#268bd2'
-      magenta: '#d33682'
-      cyan:    '#2aa198'
-      white:   '#eee8d5'
-      #      black:   '#002b36'
-      #      red:     '#cb4b16'
-      #      green:   '#586e75'
-      #      yellow:  '#657b83'
-      #      blue:    '#839496'
-      #      magenta: '#6c71c4'
-      #      cyan:    '#93a1a1'
-      #      white:   '#fdf6e3'
-  onedark: &onedark
-    primary:
-      background: '0x1e2127'
-      foreground: '0xe6efff' # '0xabb2bf'
-    normal:
-      black:   '0x1e2127'
-      red:     '0xe06c75'
-      green:   '0x98c379'
-      yellow:  '0xd19a66'
-      blue:    '0x61afef'
-      magenta: '0xc678dd'
-      cyan:    '0x56b6c2'
-      white:   '0x828791'
-    bright:
-      black:   '0x5c6370'
-      red:     '0xe06c75'
-      green:   '0x98c379'
-      yellow:  '0xd19a66'
-      blue:    '0x61afef'
-      magenta: '0xc678dd'
-      cyan:    '0x56b6c2'
-      white:   '0xe6efff'
   tomorrow_dark_bright: &tomorrow
     primary:
       background: '#1d1f21'
@@ -163,6 +42,72 @@ schemes:
       magenta: '#b77ee0'
       cyan:    '#54ced6'
       white:   '#bdbdbd'
+  gruvbox: &gruvbox
+    primary:
+      background: '#1d2021'
+      foreground: '#ebdbb2'
+    normal:
+      black:   '#282828'
+      red:     '#cc241d'
+      green:   '#98971a'
+      yellow:  '#d79921'
+      blue:    '#458588'
+      magenta: '#b16286'
+      cyan:    '#689d6a'
+    bright:
+      black:   '#928374'
+      white:   '#a89984'
+      red:     '#fb4934'
+      green:   '#b8bb26'
+      yellow:  '#fabd2f'
+      blue:    '#83a598'
+      magenta: '#d3869b'
+      cyan:    '#8ec07c'
+      white:   '#ebdbb2'
+  gruvbox_material: &gruvbox_material
+    primary:
+      background: '0x1d2021'
+      foreground: '0xd4be98'
+    normal:
+      black:   '0x5e5857' # '0x32302f'
+      red:     '0xea6962'
+      green:   '0xa9b665'
+      yellow:  '0xd8a657'
+      blue:    '0x7daea3'
+      magenta: '0xd3869b'
+      cyan:    '0x89b482'
+      white:   '0xd4be98'
+    bright:
+      black:   '0x5e5857' # '0x32302f'
+      red:     '0xea6962'
+      green:   '0xa9b665'
+      yellow:  '0xd8a657'
+      blue:    '0x7daea3'
+      magenta: '0xd3869b'
+      cyan:    '0x89b482'
+      white:   '0xd4be98'
+  onedark: &onedark
+    primary:
+      background: '0x1e2127'
+      foreground: '0xe6efff' # '0xabb2bf'
+    normal:
+      black:   '0x1e2127'
+      red:     '0xe06c75'
+      green:   '0x98c379'
+      yellow:  '0xd19a66'
+      blue:    '0x61afef'
+      magenta: '0xc678dd'
+      cyan:    '0x56b6c2'
+      white:   '0x828791'
+    bright:
+      black:   '0x5c6370'
+      red:     '0xe06c75'
+      green:   '0x98c379'
+      yellow:  '0xd19a66'
+      blue:    '0x61afef'
+      magenta: '0xc678dd'
+      cyan:    '0x56b6c2'
+      white:   '0xe6efff'
 
 # Active colour scheme
-# colors: *onedark
+colors: *tomorrow
