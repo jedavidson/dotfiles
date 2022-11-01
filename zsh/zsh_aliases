@@ -7,9 +7,11 @@ alias cse="ssh $ZID@cse.unsw.edu.au"
 alias ':q'="exit"
 alias nf="neofetch"
 alias open="nautilus"
+alias isabelle="$HOME/.local/bin/Isabelle2021-1/Isabelle2021-1"
 
 # Directory aliases
 alias dots="cd $DOTFILES"
 alias projects="cd $HOME/projects"
 alias sandbox="cd $HOME/sandbox"
 alias tutoring="cd $HOME/tutoring"
+
