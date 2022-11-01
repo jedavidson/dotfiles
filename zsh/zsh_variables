@@ -15,7 +15,7 @@ export EDITOR="/usr/local/bin/nvim"
 
 # bat(1) settings
 export MANPAGER="sh -c 'col -bx | bat -l man -p'"
-export BAT_THEME="Solarized (dark)"
+export BAT_THEME="ansi"
 
 # Set zID (for UNSW CSE purposes)
 export ZID="z5257605"
