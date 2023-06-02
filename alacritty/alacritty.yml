@@ -8,15 +8,15 @@ window:
 # Fonts font:
 font:
   normal:
-    family: FiraCode Nerd Font Mono
+    family: DejaVuSansMono Nerd Font Mono
     style: Regular
   bold:
-    family: FiraCode Nerd Font Mono
+    family: DejaVuSansMono Nerd Font Mono
     style: Bold
   italic:
-    family: FiraCode Nerd Font Mono
+    family: DejaVuSansMono Nerd Font Mono
     style: Italic
-  size: 10
+  size: 9
 
 # Colour schemes
 schemes:

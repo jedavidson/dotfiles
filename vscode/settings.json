@@ -2,33 +2,36 @@
   // General settings
   "workbench.startupEditor": "newUntitledFile",
   "workbench.editor.untitled.hint": "hidden",
-  "files.trimTrailingWhitespace": true,
+  // "files.trimTrailingWhitespace": true,
   "security.workspace.trust.untrustedFiles": "open",
   "editor.suggest.preview": false,
   "editor.inlineSuggest.enabled": true,
   "editor.suggestSelection": "first",
-  "editor.bracketPairColorization.enabled": false,
-  "editor.renderWhitespace": "boundary",
 
-  // Theme plugin settings
-  "workbench.colorTheme": "Monokai Dimmed",
+  // Terminal settings
+  "terminal.integrated.allowChords": false,
+  "terminal.integrated.commandsToSkipShell": ["-workbench.action.quickOpen"],
+
+  // Theme settings
+  "workbench.colorTheme": "Gruvbox Material Dark",
   "workbench.iconTheme": "material-icon-theme",
+  "editor.bracketPairColorization.enabled": true,
   "oneDarkPro.italic": false,
-  "oneDarkPro.bold": true,
+  "oneDarkPro.bold": false,
   "oneDarkPro.vivid": true,
-  "oneDarkPro.editorTheme": "Solarized",
-  "gruvboxMaterial.darkPalette": "mix",
-  "gruvboxMaterial.italicComments": false,
   "gruvboxMaterial.darkContrast": "hard",
-  "gruvboxMaterial.darkWorkbench": "flat",
+  "gruvboxMaterial.darkPalette": "mix",
+  "gruvboxMaterial.darkWorkbench": "high-contrast",
+  "gruvboxMaterial.colorfulSyntax": true,
+  "gruvboxMaterial.italicComments": false,
   "material-icon-theme.activeIconPack": "react",
   "material-icon-theme.folders.color": "#adadad",
 
   // Font settings
-  "editor.fontFamily": "DejaVuSansMono Nerd Font Mono",
-  "editor.fontSize": 13,
-  "terminal.integrated.fontFamily": "DejaVuSansMono Nerd Font Mono",
-  "terminal.integrated.fontSize": 13,
+  "editor.fontFamily": "JetBrainsMono Nerd Font Mono",
+  "editor.fontSize": 12,
+  "terminal.integrated.fontFamily": "JetBrainsMono Nerd Font Mono",
+  "terminal.integrated.fontSize": 12,
 
   // File exclusion settings
   "files.exclude": {
@@ -41,18 +44,9 @@
   // IntelliSense settings
   "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
 
-  // Remote - SSH settings
-  "remote.SSH.lockfilesInTmp": true,
-  "remote.SSH.remoteServerListenOnSocket": true,
-  "remote.SSH.remotePlatform": {
-    "vscode.cse.unsw.edu.au": "linux"
-  },
-
   // Python settings
-  "python.analysis.typeCheckingMode": "basic",
   "python.languageServer": "Pylance",
-  "python.testing.pytestArgs": ["."],
-  "python.testing.pytestEnabled": true,
+  "python.analysis.typeCheckingMode": "basic",
   "workbench.editorAssociations": {
     "*.ipynb": "jupyter-notebook"
   },
@@ -62,13 +56,31 @@
   },
 
   // C/C++ settings
-  "C_Cpp.intelliSenseEngine": "Disabled",
   "clangd.onConfigChanged": "restart",
+  "[cpp]": {
+    "editor.inlayHints.enabled": "offUnlessPressed",
+    "editor.formatOnSave": true,
+    "editor.formatOnPaste": false
+  },
+
+  // Rust settings
+  "[rust]": {
+    "editor.inlayHints.enabled": "offUnlessPressed",
+    // "editor.formatOnSave": true,
+    // "editor.formatOnPaste": true
+  },
 
   // Haskell settings
   "[haskell]": {
     "editor.tabSize": 2,
     "editor.suggest.preview": false
+  },
+
+  // OCaml settings
+  "[ocaml]": {
+    "editor.tabSize": 2,
+    "editor.insertSpaces": true,
+    "editor.formatOnSave": true
   },
 
   // LaTeX settings
@@ -78,49 +90,27 @@
     "editor.suggestSelection": "recentlyUsedByPrefix"
   },
   "latex-workshop.view.pdf.viewer": "tab",
-
-  // JavaScript settings
-  "[javascript]": {
-    "editor.formatOnSave": true,
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "editor.tabSize": 2
-  },
-  "[javascriptreact]": {
-    "editor.formatOnSave": true,
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "editor.tabSize": 2
-  },
-  "[typescript]": {
-    "editor.formatOnSave": true,
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "editor.tabSize": 2
-  },
-  "[typescriptreact]": {
-    "editor.formatOnSave": true,
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "editor.tabSize": 2
-  },
-  "[json]": {
-    "editor.formatOnSave": true,
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "editor.tabSize": 2
-  },
-  "[jsonc]": {
-    "editor.formatOnSave": true,
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "editor.tabSize": 2
-  },
+  "latex-workshop.latex.tools": [
+    {
+      "name": "latexmk",
+      "command": "latexmk",
+      "args": [
+        "-shell-escape",
+        "-synctex=1",
+        "-interaction=nonstopmode",
+        "-file-line-error",
+        "-pdf",
+        "-outdir=%OUTDIR%",
+        "%DOC%"
+      ]
+    }
+  ],
 
   // SQL settings
   "[sql]": {
     "editor.tabSize": 2
   },
-
-  // GitHub Copilot settings
-  "github.copilot.enable": {
-    "*": false,
-    "yaml": false,
-    "plaintext": false,
-    "markdown": false
+  "[python]": {
+    "editor.formatOnType": true
   }
 }
