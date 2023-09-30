@@ -5,25 +5,27 @@
   "security.workspace.trust.untrustedFiles": "open",
   "editor.suggestSelection": "first",
   "editor.suggest.preview": false,
-  "editor.bracketPairColorization.enabled": true,
+  "window.commandCenter": false,
+  "update.showReleaseNotes": false,
+
+  // Tutoring
+  // "window.zoomLevel": 1,
+  // "editor.fontSize": 16,
+  // "terminal.integrated.fontSize": 16,
 
   // Font settings
-  "editor.fontSize": 12,
-  "terminal.integrated.fontSize": 12,
+  "editor.fontFamily": "MesloLGS Nerd Font Mono",
+  "terminal.integrated.fontFamily": "MesloLGS Nerd Font Mono",
 
   // Terminal settings
   "terminal.integrated.allowChords": false,
-
-  // Theme settings
-  "workbench.iconTheme": "material-icon-theme",
   "material-icon-theme.activeIconPack": "react",
   "material-icon-theme.folders.color": "#adadad",
   "gruvboxMaterial.darkContrast": "hard",
-  "gruvboxMaterial.darkPalette": "mix",
+  "gruvboxMaterial.darkPalette": "original",
+  "gruvboxMaterial.darkWorkbench": "high-contrast",
   "gruvboxMaterial.italicComments": false,
-  "gruvboxMaterial.darkWorkbench": "flat",
-  "oneDarkPro.italic": false,
-  "oneDarkPro.vivid": true,
+  "gruvboxMaterial.colorfulSyntax": true,
 
   // File exclusion settings
   "files.exclude": {
@@ -36,10 +38,32 @@
     ".DS_Store": true
   },
 
-  // Python settings
-  "python.languageServer": "Pylance",
-  "python.analysis.typeCheckingMode": "basic",
-  "python.testing.pytestArgs": ["."],
+  // C/C++ settings
+  "C_Cpp.autocomplete": "disabled",
+  "C_Cpp.intelliSenseEngine": "disabled",
+  "[c]": {
+    "editor.inlayHints.enabled": "offUnlessPressed",
+    "editor.wordBasedSuggestions": false,
+    "editor.suggest.insertMode": "replace",
+    "editor.semanticHighlighting.enabled": true,
+    "editor.formatOnSave": true,
+    "editor.formatOnPaste": true
+  },
+  "[cpp]": {
+    "editor.inlayHints.enabled": "offUnlessPressed",
+    "editor.wordBasedSuggestions": false,
+    "editor.suggest.insertMode": "replace",
+    "editor.semanticHighlighting.enabled": true,
+    "editor.formatOnSave": true,
+    "editor.formatOnPaste": true
+  },
+
+  // Rust settings
+  "[rust]": {
+    "editor.inlayHints.enabled": "offUnlessPressed",
+    "editor.formatOnSave": true,
+    "editor.formatOnPaste": true
+  },
 
   // LaTeX settings
   "[latex]": {
@@ -47,41 +71,14 @@
     "editor.formatOnPaste": false
   },
 
-  // Prettier settings
-  "[javascript]": {
-    "editor.formatOnSave": true,
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  // Haskell settings
+  "[haskell]": {
+    "editor.tabSize": 2
   },
-  "[javascriptreact]": {
-    "editor.formatOnSave": true,
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  "haskell.manageHLS": "GHCup",
+  "haskell.serverEnvironment": {
+    "PATH": "${HOME}/.ghcup/bin:$PATH"
   },
-  "[typescript]": {
-    "editor.formatOnSave": true,
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[typescriptreact]": {
-    "editor.formatOnSave": true,
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[json]": {
-    "editor.formatOnSave": true,
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[jsonc]": {
-    "editor.formatOnSave": true,
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-
-  // SSHFS settings
-  "sshfs.configs": [
-    {
-      "name": "cse",
-      "root": "~/cs/tutoring/22t1/cs2521/wk4", // Change this
-      "username": "z5257605",
-      "host": "login5.cse.unsw.edu.au",
-      "privateKeyPath": "$HOME/.ssh/id_rsa"
-    }
-  ],
-  "sshfs.flags": ["REMOTE_COMMANDS"]
+  "haskell.plugin.hlint.diagnosticsOn": false,
+  "haskell.plugin.hlint.codeActionsOn": false,
 }
