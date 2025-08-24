@@ -1,0 +1,14 @@
+theme = tokyonight_moon
+#theme = "GruvboxLightHard"
+
+font-family = "JetBrainsMono Nerd Font Mono"
+font-size = 12
+
+# Cycle between tabs; the first 4 should be enough
+keybind = ctrl+1=goto_tab:1
+keybind = ctrl+2=goto_tab:2
+keybind = ctrl+3=goto_tab:3
+keybind = ctrl+4=goto_tab:4
+
+# Unbind full screen
+keybind = ctrl+enter=unbind

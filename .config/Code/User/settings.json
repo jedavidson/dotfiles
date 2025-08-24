@@ -1,0 +1,59 @@
+{
+  "chat.commandCenter.enabled": false,
+  "diffEditor.ignoreTrimWhitespace": false,
+  "editor.bracketPairColorization.enabled": true,
+  "editor.inlineSuggest.enabled": true,
+  "editor.insertSpaces": false,
+  "editor.suggest.preview": false,
+  "editor.suggestSelection": "first",
+  "files.trimTrailingWhitespace": false,
+  "security.workspace.trust.untrustedFiles": "open",
+  "window.commandCenter": false,
+  "window.customTitleBarVisibility": "never",
+  "window.titleBarStyle": "native",
+  "workbench.startupEditor": "newUntitledFile",
+
+  "workbench.colorTheme": "Moonlight",
+  "workbench.iconTheme": "symbols",
+  "workbench.productIconTheme": "fluent-icons",
+  "gruvboxMaterial.colorfulSyntax": true,
+  "gruvboxMaterial.italicComments": false,
+  "gruvboxMaterial.darkContrast": "hard",
+  "gruvboxMaterial.darkPalette": "original",
+  "gruvboxMaterial.darkWorkbench": "high-contrast",
+  "gruvboxMaterial.lightContrast": "hard",
+  "gruvboxMaterial.lightPalette": "original",
+  "gruvboxMaterial.lightWorkbench": "high-contrast",
+
+  "editor.fontFamily": "JetBrainsMono Nerd Font Mono",
+  "editor.fontSize": 14,
+
+  "terminal.integrated.allowChords": false,
+  "terminal.integrated.commandsToSkipShell": ["-workbench.action.quickOpen"],
+  "terminal.integrated.fontFamily": "JetBrainsMono Nerd Font Mono",
+  "terminal.integrated.fontSize": 14,
+
+  "[cpp]": {
+    "editor.inlayHints.enabled": "offUnlessPressed",
+    "editor.formatOnSave": false,
+    "editor.formatOnPaste": false
+  },
+  "clangd.path": "/usr/bin/clangd-18",
+  "clangd.arguments": [
+    // Limit clangd to using no more than 20 threads
+    "-j=20"
+  ],
+  "clangd.onConfigChanged": "restart",
+  "cmake.configureOnOpen": false,
+  "cmake.configureOnEdit": false,
+
+  "python.analysis.typeCheckingMode": "basic",
+  "python.REPL.enableREPLSmartSend": false,
+  "notebook.output.scrolling": true,
+
+  "todo-tree.general.statusBar": "current file",
+  "todo-tree.highlights.useColourScheme": true,
+  "todo-tree.general.tags":                      ["TODO",   "FIXME",  "BUG",   "NOTE",  "HACK",  "XXX"],
+  "todo-tree.highlights.backgroundColourScheme": ["violet", "orange", "red",   "green", "blue",  "yellow"],
+  "todo-tree.highlights.foregroundColourScheme": ["white",  "black",  "white", "white", "white", "black"],
+}
