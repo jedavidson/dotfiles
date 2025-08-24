@@ -7,17 +7,7 @@ export PATH="$PATH:$HOME/.local/bin"
 # Make sure terminal colours work fine
 export TERM="xterm-256color"
 
-# Set up `vivspack`
-export VIVSPACK_ROOT="$HOME/repos/vivcourt/vivspack"
-source ${VIVSPACK_ROOT}/enable
-
-# Make it so that `./diff` and `./push` automatically do Olaf validation
-export VIV_INVENTORY_INCLUDE_OLAF_DEPENDS=1
-
-# Set up `ccache`
-export CMAKE_CXX_COMPILER_LAUNCHER=ccache
-
-# # Set up zinit with plugins and snippets
+# Set up zinit with plugins and snippets
 ZINIT_HOME="${XDG_DATA_HOME:-${HOME}/.local/share}/zinit/zinit.git"
 if [ ! -d "$ZINIT_HOME" ]; then
    mkdir -p "$(dirname $ZINIT_HOME)"
@@ -54,6 +44,9 @@ export PROMPT=$'[%*] %n@%m %~${vcs_info_msg_0_}\n%# '
 
 # Load zoxide
 eval "`zoxide init --cmd cd zsh`"
+
+# VivCourt-specific config
+source "$HOME/.vivrc"
 
 ##################
 # [[ Keybinds ]] #

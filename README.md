@@ -1,7 +1,7 @@
 First, do
 
-```
-sudo apt install stow            # Dotfile manager
+```sh
+sudo apt install stow            # GNU Stow, for managing dotfiles 
 sudo apt install fzf             # Fuzzy file finding
 sudo apt install earlyoom        # Eager OOM killer
 
@@ -13,7 +13,10 @@ cargo install --locked bat       # `cat` replacement
 cargo install --locked fd-find   # `find` replacement
 cargo install --locked git-delta # `git` differ
 ```
+
+These dotfiles are managed and initially deployed using [GNU Stow](https://www.gnu.org/software/stow/).
 After cloning this repository into `$HOME/dotfiles`, run
-```
-stow --adopt .
+
+```sh
+stow .
 ```
