@@ -1,22 +1,13 @@
-First, do
+My personal Unix dotfiles, managed and deployed using [GNU Stow](https://www.gnu.org/software/stow/).
+
+I use [zsh](https://www.zsh.org/) as my shell, [ghostty](https://ghostty.org/) for my terminal, and both [Visual Studio Code](https://code.visualstudio.com/) and [Neovim](https://neovim.io/) as my text editors (though config for the latter is managed in [another repo](https://github.com/jedavidson/kickstart.nvim)).
 
 ```sh
-sudo apt install stow            # GNU Stow, for managing dotfiles 
-sudo apt install fzf             # Fuzzy file finding
-sudo apt install earlyoom        # Eager OOM killer
+# 1. Clone
+$ git clone git@github.com:jedavidson/dotfiles.git $HOME/dotfiles
+$ cd $HOME/dotfiles
 
-curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
-cargo install --locked eza       # `ls` replacement
-cargo install --locked zoxide    # `cd` replacement
-cargo install --locked ripgrep   # `grep` replacement
-cargo install --locked bat       # `cat` replacement
-cargo install --locked fd-find   # `find` replacement
-cargo install --locked git-delta # `git` differ
-```
-
-These dotfiles are managed and initially deployed using [GNU Stow](https://www.gnu.org/software/stow/).
-After cloning this repository into `$HOME/dotfiles`, run
-
-```sh
-stow .
+# 2. Install tools and extensions, then symlink config
+$ ./preinstall.sh
+$ stow .
 ```
