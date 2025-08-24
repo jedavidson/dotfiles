@@ -9,9 +9,10 @@ export TERM="xterm-256color"
 
 # Set up zinit with plugins and snippets
 ZINIT_HOME="${XDG_DATA_HOME:-${HOME}/.local/share}/zinit/zinit.git"
-if [ ! -d "$ZINIT_HOME" ]; then
-   mkdir -p "$(dirname $ZINIT_HOME)"
-   git clone https://github.com/zdharma-continuum/zinit.git "$ZINIT_HOME"
+if [ ! -d "$ZINIT_HOME" ]
+then
+    mkdir -p "$(dirname $ZINIT_HOME)"
+    git clone https://github.com/zdharma-continuum/zinit.git "$ZINIT_HOME"
 fi
 source "${ZINIT_HOME}/zinit.zsh"
 zinit light zsh-users/zsh-syntax-highlighting
@@ -32,21 +33,73 @@ ZSH_HIGHLIGHT_STYLES[path_prefix]=none
 # Load Rust
 . "$HOME/.cargo/env"
 
-# Set up prompt with some basic version control info
-# TODO: Make this coloured
-autoload -Uz vcs_info
-precmd() { vcs_info }
-setopt prompt_subst
-zstyle ':vcs_info:git:*' formats ' %s:%b'
-zstyle ':vcs_info:git:*' actionformats ' %s:%b|%a'
-zstyle ':vcs_info:*' enable git
-export PROMPT=$'[%*] %n@%m %~${vcs_info_msg_0_}\n%# '
-
 # Load zoxide
 eval "`zoxide init --cmd cd zsh`"
 
 # VivCourt-specific config
 source "$HOME/.vivrc"
+
+################
+# [[ Prompt ]] #
+################
+
+autoload -Uz vcs_info add-zsh-hook
+setopt prompt_subst
+
+zstyle ':vcs_info:*' enable git
+zstyle ':vcs_info:git:*' formats '%s:%b'
+zstyle ':vcs_info:git:*' actionformats '%s:%b|%a'
+add-zsh-hook precmd vcs_info
+
+preexec()
+{
+    timer=${EPOCHREALTIME}
+}
+
+cmd_duration_precmd()
+{
+    if [[ -n "$timer" ]]; then
+        now=${EPOCHREALTIME}
+        elapsed=$(printf "%.2f" "$(echo "$now - $timer" | bc)")
+        if (( $(echo "$elapsed > 1" | bc -l) )); then
+            export CMD_DURATION="${elapsed}s%f"
+        else
+            export CMD_DURATION=""
+        fi
+    else
+        export CMD_DURATION=""
+    fi
+}
+add-zsh-hook precmd cmd_duration_precmd
+
+CLOCK_COLOUR="%F{#8087cd}"
+USER_HOST_COLOUR="%F{#b39bd6}"
+CWD_COLOUR="%F{#87adfc}"
+VCS_COLOUR="%F{#c2e791}"
+CMD_DURATION_COLOUR="%F{#fac97d}"
+
+prompt_precmd()
+{
+    local vcs=""
+    if [[ -n $vcs_info_msg_0_ ]]
+    then
+        vcs=" on ${VCS_COLOUR}${vcs_info_msg_0_}%f"
+    fi
+
+    local cmd_duration=""
+    if [[ -n $CMD_DURATION ]]
+    then
+        cmd_duration=" took ${CMD_DURATION_COLOUR}${CMD_DURATION}%f"
+    fi
+
+    PROMPT="${CLOCK_COLOUR}[%*]%f "
+    PROMPT+="${USER_HOST_COLOUR}%n@%m%f "
+    PROMPT+="in ${CWD_COLOUR}%~%f"
+    PROMPT+="${vcs}"
+    PROMPT+="${cmd_duration}"
+    PROMPT+=$'\n%# '
+}
+add-zsh-hook precmd prompt_precmd
 
 ##################
 # [[ Keybinds ]] #
@@ -112,22 +165,25 @@ alias vi="$TRUE_NVIM"
 export EDITOR="$TRUE_NVIM"
 
 # `cd` up n directories, instead of having to type cd ../../ forever
-up () {
-   n=$1
-   for i in `seq $n`; do
-      cd ..
-   done
+up ()
+{
+    n=$1
+    for i in `seq $n`; do
+        cd ..
+    done
 }
 
 # Commit and push
-cap () {
-   msg=$1
-   git commit -m $msg
-   git push
+cap ()
+{
+    msg=$1
+    git commit -m $msg
+    git push
 }
 
 # Copy file contents to clipboard
-yoink () {
-   file=$1
-   xclip -sel c < $file
+yoink ()
+{
+    file=$1
+    xclip -sel c < $file
 }
