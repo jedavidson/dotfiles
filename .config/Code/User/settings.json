@@ -1,5 +1,4 @@
 {
-  "chat.commandCenter.enabled": false,
   "diffEditor.ignoreTrimWhitespace": false,
   "editor.bracketPairColorization.enabled": true,
   "editor.inlineSuggest.enabled": true,
@@ -50,10 +49,39 @@
   "python.analysis.typeCheckingMode": "basic",
   "python.REPL.enableREPLSmartSend": false,
   "notebook.output.scrolling": true,
+  "ruff.lineLength": 120,
 
   "todo-tree.general.statusBar": "current file",
   "todo-tree.highlights.useColourScheme": true,
-  "todo-tree.general.tags":                      ["TODO",   "FIXME",  "BUG",   "NOTE",  "HACK",  "XXX"],
-  "todo-tree.highlights.backgroundColourScheme": ["violet", "orange", "red",   "green", "blue",  "yellow"],
-  "todo-tree.highlights.foregroundColourScheme": ["white",  "black",  "white", "white", "white", "black"],
+  "todo-tree.general.tags": [
+    "TODO",
+    "FIXME",
+    "BUG",
+    "NOTE",
+    "HACK",
+    "XXX"
+  ],
+  "todo-tree.highlights.backgroundColourScheme": [
+    "violet",
+    "orange",
+    "red",
+    "green",
+    "blue",
+    "yellow"
+  ],
+  "todo-tree.highlights.foregroundColourScheme": [
+    "white",
+    "black",
+    "white",
+    "white",
+    "white",
+    "black"
+  ],
+
+  "chat.agent.enabled": false,
+  "chat.commandCenter.enabled": false,
+  "chat.disableAIFeatures": true,
+  "workbench.editorAssociations": {
+    "git-rebase-todo": "default"
+  },
 }

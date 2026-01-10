@@ -30,3 +30,4 @@ git clone git@github.com:jedavidson/kickstart.nvim.git "$HOME/.config/nvim"
 # Other nice-to-haves
 sudo apt install earlyoom  # Eager OOM killer
 sudo snap install btop     # A nicer-looking `htop`
+

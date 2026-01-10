@@ -43,63 +43,15 @@ source "$HOME/.vivrc"
 # [[ Prompt ]] #
 ################
 
-autoload -Uz vcs_info add-zsh-hook
-setopt prompt_subst
+# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
+# Initialization code that may require console input (password prompts, [y/n]
+# confirmations, etc.) must go above this block; everything else may go below.
+if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
+  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
+fi
 
-zstyle ':vcs_info:*' enable git
-zstyle ':vcs_info:git:*' formats '%s:%b'
-zstyle ':vcs_info:git:*' actionformats '%s:%b|%a'
-add-zsh-hook precmd vcs_info
-
-preexec()
-{
-    timer=${EPOCHREALTIME}
-}
-
-cmd_duration_precmd()
-{
-    if [[ -n "$timer" ]]; then
-        now=${EPOCHREALTIME}
-        elapsed=$(printf "%.2f" "$(echo "$now - $timer" | bc)")
-        if (( $(echo "$elapsed > 1" | bc -l) )); then
-            export CMD_DURATION="${elapsed}s%f"
-        else
-            export CMD_DURATION=""
-        fi
-    else
-        export CMD_DURATION=""
-    fi
-}
-add-zsh-hook precmd cmd_duration_precmd
-
-CLOCK_COLOUR="%F{#8087cd}"
-USER_HOST_COLOUR="%F{#b39bd6}"
-CWD_COLOUR="%F{#87adfc}"
-VCS_COLOUR="%F{#c2e791}"
-CMD_DURATION_COLOUR="%F{#fac97d}"
-
-prompt_precmd()
-{
-    local vcs=""
-    if [[ -n $vcs_info_msg_0_ ]]
-    then
-        vcs=" on ${VCS_COLOUR}${vcs_info_msg_0_}%f"
-    fi
-
-    local cmd_duration=""
-    if [[ -n $CMD_DURATION ]]
-    then
-        cmd_duration=" took ${CMD_DURATION_COLOUR}${CMD_DURATION}%f"
-    fi
-
-    PROMPT="${CLOCK_COLOUR}[%*]%f "
-    PROMPT+="${USER_HOST_COLOUR}%n@%m%f "
-    PROMPT+="in ${CWD_COLOUR}%~%f"
-    PROMPT+="${vcs}"
-    PROMPT+="${cmd_duration}"
-    PROMPT+=$'\n%# '
-}
-add-zsh-hook precmd prompt_precmd
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+source ~/powerlevel10k/powerlevel10k.zsh-theme
 
 ##################
 # [[ Keybinds ]] #
@@ -187,3 +139,4 @@ yoink ()
     file=$1
     xclip -sel c < $file
 }
+

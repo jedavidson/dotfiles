@@ -1,5 +1,7 @@
-theme = tokyonight_moon
+theme = "tokyonight_moon"
+#theme = "GruvboxDarkHard"
 #theme = "GruvboxLightHard"
+#theme = "Ubuntu"
 
 font-family = "JetBrainsMono Nerd Font Mono"
 font-size = 12
