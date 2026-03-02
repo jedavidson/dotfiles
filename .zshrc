@@ -140,3 +140,4 @@ yoink ()
     xclip -sel c < $file
 }
 
+. "/home/james/.deno/env"
