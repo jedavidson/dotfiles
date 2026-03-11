@@ -83,4 +83,6 @@
   "workbench.editorAssociations": {
     "git-rebase-todo": "default"
   },
+
+  "claudeCode.preferredLocation": "sidebar",
 }

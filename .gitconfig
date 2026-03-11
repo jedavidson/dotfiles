@@ -6,7 +6,7 @@
     path = ~/repos/vivcourt/.gitconfig-vivcourt
 
 [init]
-    defaultBranch = main
+    defaultBranch = master
 
 [push]
     autoSetupRemote = true

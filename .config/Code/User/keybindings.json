@@ -1,0 +1,33 @@
+// Place your key bindings in this file to override the defaults
+[
+	{
+		"key": "shift+enter",
+		"command": "-python.execSelectionInTerminal",
+		"when": "editorTextFocus && !findInputFocussed && !isCompositeNotebook && !jupyter.ownsSelection && !notebookEditorFocused && !replaceInputFocussed && editorLangId == 'python'"
+	},
+	{
+		"key": "shift+enter",
+		"command": "-python.execInREPL",
+		"when": "config.python.REPL.sendToNativeREPL && editorTextFocus && !isCompositeNotebook && !jupyter.ownsSelection && !notebookEditorFocused && editorLangId == 'python'"
+	},
+  	{
+		"key": "ctrl+1",
+		"command": "workbench.action.openEditorAtIndex1",
+		"when": "editorTextFocus"
+	},
+	{
+		"key": "ctrl+2",
+		"command": "workbench.action.openEditorAtIndex2",
+		"when": "editorTextFocus"
+	},
+	{
+		"key": "ctrl+3",
+		"command": "workbench.action.openEditorAtIndex3",
+		"when": "editorTextFocus"
+	},
+	{
+		"key": "ctrl+4",
+		"command": "workbench.action.openEditorAtIndex4",
+		"when": "editorTextFocus"
+	}
+]
