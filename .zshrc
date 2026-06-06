@@ -36,8 +36,11 @@ ZSH_HIGHLIGHT_STYLES[path_prefix]=none
 # Load zoxide
 eval "`zoxide init --cmd cd zsh`"
 
-# VivCourt-specific config
-source "$HOME/.vivrc"
+# Load Deno (if it exists)
+[[ -f "$HOME/.deno/env" ]] && . "$HOME/.deno/env"
+
+# VivCourt-specific config (if it exists)
+[[ -f "$HOME/.vivrc" ]] && source "$HOME/.vivrc"
 
 ################
 # [[ Prompt ]] #
@@ -110,7 +113,7 @@ DISABLE_LS_COLORS="true"
 alias ls="eza"
 
 # Use `nvim` instead of `vim`, and as default editor
-TRUE_NVIM="nvim-v0.11.2-linux-x86_64.appimage"
+TRUE_NVIM="nvim-linux-x86_64.appimage"
 alias nvim="$TRUE_NVIM"
 alias vim="$TRUE_NVIM"
 alias vi="$TRUE_NVIM"
@@ -139,5 +142,3 @@ yoink ()
     file=$1
     xclip -sel c < $file
 }
-
-. "/home/james/.deno/env"
