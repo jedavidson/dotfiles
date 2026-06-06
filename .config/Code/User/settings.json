@@ -5,6 +5,9 @@
   "editor.insertSpaces": false,
   "editor.suggest.preview": false,
   "editor.suggestSelection": "first",
+  "workbench.editorAssociations": {
+    "git-rebase-todo": "default"
+  },
   "files.trimTrailingWhitespace": false,
   "security.workspace.trust.untrustedFiles": "open",
   "window.commandCenter": false,
@@ -26,6 +29,7 @@
 
   "editor.fontFamily": "JetBrainsMono Nerd Font Mono",
   "editor.fontSize": 14,
+  "chat.fontSize": 15,
 
   "terminal.integrated.allowChords": false,
   "terminal.integrated.commandsToSkipShell": ["-workbench.action.quickOpen"],
@@ -77,12 +81,9 @@
     "white",
     "black"
   ],
+  "todo-tree.ripgrep.ripgrep": "/home/james/.cargo/bin/rg",
 
   "chat.agent.enabled": false,
   "chat.disableAIFeatures": true,
-  "workbench.editorAssociations": {
-    "git-rebase-todo": "default"
-  },
-
   "claudeCode.preferredLocation": "sidebar",
 }
