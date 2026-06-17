@@ -44,7 +44,7 @@ Managing the version becomes a more manual chore (which I honestly do quite rare
 Most of this can be automated:
 
 ```sh
-$ dconf load /org/gnome < dconf_org_gnome.ini
+$ dconf load /org/gnome/ < dconf_org_gnome.ini
 ```
 
 ### Extensions
