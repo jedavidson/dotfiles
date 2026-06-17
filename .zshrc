@@ -1,6 +1,6 @@
-#####################
-# [[ Environment ]] #
-#####################
+###########################
+# [[ Environment (pre) ]] #
+###########################
 
 export PATH="$PATH:$HOME/.local/bin"
 
@@ -32,9 +32,6 @@ ZSH_HIGHLIGHT_STYLES[path_prefix]=none
 
 # Load Rust
 . "$HOME/.cargo/env"
-
-# Load zoxide
-eval "`zoxide init --cmd cd zsh`"
 
 # Load Deno (if it exists)
 [[ -f "$HOME/.deno/env" ]] && . "$HOME/.deno/env"
@@ -142,3 +139,11 @@ yoink ()
     file=$1
     xclip -sel c < $file
 }
+
+############################
+# [[ Environment (post) ]] #
+############################
+
+# Load zoxide
+eval "`zoxide init --cmd cd zsh`"
+
