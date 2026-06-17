@@ -43,8 +43,10 @@
   },
   "clangd.path": "/usr/bin/clangd-18",
   "clangd.arguments": [
-    // Limit clangd to using no more than 20 threads
-    "-j=20"
+    // Thread cap is per-machine via the CLANGD_JOBS env var (e.g. set in
+    // /etc/environment). MUST be defined on every machine: an empty -j=
+    // is rejected by clangd and stops the language server from starting.
+    "-j=${env:CLANGD_JOBS}"
   ],
   "clangd.onConfigChanged": "restart",
   "cmake.configureOnOpen": false,
@@ -81,7 +83,7 @@
     "white",
     "black"
   ],
-  "todo-tree.ripgrep.ripgrep": "/home/james/.cargo/bin/rg",
+  "todo-tree.ripgrep.ripgrep": "/usr/share/code/resources/app/node_modules/@vscode/ripgrep-universal/bin/linux-x64/rg",
 
   "chat.agent.enabled": false,
   "chat.disableAIFeatures": true,

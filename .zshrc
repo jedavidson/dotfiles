@@ -7,6 +7,14 @@ export PATH="$PATH:$HOME/.local/bin"
 # Make sure terminal colours work fine
 export TERM="xterm-256color"
 
+# Cap clangd's worker threads per machine (consumed by clangd.arguments in
+# VS Code as -j=$CLANGD_JOBS). This is so that it doesn't try and overuse
+# the available system memory it has.
+case "${HOST%%.*}" in
+    carbon) export CLANGD_JOBS=4 ;;
+    veyron) export CLANGD_JOBS=20 ;;
+esac
+
 # Set up zinit with plugins and snippets
 ZINIT_HOME="${XDG_DATA_HOME:-${HOME}/.local/share}/zinit/zinit.git"
 if [ ! -d "$ZINIT_HOME" ]
