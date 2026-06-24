@@ -33,6 +33,7 @@
 
   "terminal.integrated.allowChords": false,
   "terminal.integrated.commandsToSkipShell": ["-workbench.action.quickOpen"],
+  "terminal.integrated.cursorStyle": "line",
   "terminal.integrated.fontFamily": "JetBrainsMono Nerd Font Mono",
   "terminal.integrated.fontSize": 14,
 
@@ -41,6 +42,7 @@
     "editor.formatOnSave": false,
     "editor.formatOnPaste": false
   },
+  "C_Cpp.intelliSenseEngine": "disabled",
   "clangd.path": "/usr/bin/clangd-18",
   "clangd.arguments": [
     // Thread cap is per-machine via the CLANGD_JOBS env var (e.g. set in
@@ -87,5 +89,4 @@
 
   "chat.agent.enabled": false,
   "chat.disableAIFeatures": true,
-  "claudeCode.preferredLocation": "sidebar",
 }
