@@ -16,6 +16,7 @@ sudo apt install fzf
 # We will need `build-essential` to be able to do that
 sudo apt install build-essential
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+source "$HOME/.cargo/env"
 cargo install --locked eza        # `ls` replacement
 cargo install --locked zoxide     # `cd` replacement
 cargo install --locked ripgrep    # `grep` replacement
